@@ -545,8 +545,7 @@
     <button class="brand-btn" onclick="showBrand('shyi',this)">上仪 SHANGYI</button>
     <button class="brand-btn" onclick="showBrand('siemens',this)">西门子 SIEMENS</button>
     <button class="brand-btn" onclick="showBrand('auma',this)">欧玛 AUMA</button>
-    <button class="brand-btn" onclick="showBrand('bernard',this)">伯纳德 Bernard</button>
-    <button class="brand-btn" onclick="showBrand('yangxiu',this)">扬修 Yangxiu</button>
+    <button class="brand-btn" onclick="showBrand('bernard',this)">伯纳德 Bernard</button><button class="brand-btn" onclick="showBrand('yangxiu',this)">扬修 Yangxiu</button>
     <button class="brand-btn" onclick="showBrand('sipos',this)">西博思 SIPOS</button>
     <button class="brand-btn" onclick="showBrand('chuanyi',this)">川仪 CQCI</button>
     <button class="brand-btn" onclick="showBrand('pneumatic',this)">气动定位器 Positioner</button>
@@ -3717,18 +3716,22 @@
 </div>
 
 <!-- ==================== 3. DZW 多回转 ==================== -->
-    <div class="brand-panel" id="brand-yangxiu"><div <div class="series-tabs"><button class="tab-btn" onclick="showSeries('yangxiu','yx',this)">扬修<span class="sub">扬州电力·国产</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dzw',this)">DZW<span class="sub">扬修多回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dqw',this)">DQW<span class="sub">扬修部分回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','yangxiu-2sa3',this)">扬修2SA3<span class="sub">扬修2SA3系列</span></button><button class="tab-btn" onclick="showSeries('yangxiu','lqa',this)">LQA<span class="sub">立式曲柄式</span></button></div><div class="series-panel" id="yangxiu-yx">
+    
+  </div>
+
+  <!-- ==================== 西博思 SIPOS ==================== -->
+  <div class="brand-panel" id="brand-yangxiu"><div class="series-tabs"><button class="tab-btn" onclick="showSeries('yangxiu','yx',this)">扬修<span class="sub">扬州电力·国产</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dzw',this)">DZW<span class="sub">扬修多回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dqw',this)">DQW<span class="sub">扬修部分回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','yangxiu-2sa3',this)">扬修2SA3<span class="sub">扬修2SA3系列</span></button><button class="tab-btn" onclick="showSeries('yangxiu','lqa',this)">LQA<span class="sub">立式曲柄式</span></button></div><div class="series-panel" id="yangxiu-yx">
       <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-yx','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-yx','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-yx','detail',this)">端子表</button></div>
-      <div class="ver-panel" id="yangxiu-yx-simple"><div class="simple-section">
+      <div class="ver-panel" id="bernard-yx-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>扬修（扬州电力）</h3><div class="term-desc">扬州电力设备修造厂（扬修），国产老牌，主产DZW/DQW阀门电动装置与2SA3系列（西门子技术路线）。本页为扬修常规电动装置速查，端子与调试方法以铭牌接线图为准。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V，电机S2短时工作制</div></div></div>
         <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span></div></div></div><div class="term-desc">配LK-3或类似控制模块，远方/就地切换</div></div>
         <div class="simple-block block-feedback"><h3><span class="icon">反</span>反馈 + 电位器</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">行程开关</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">电位器</span><div class="term-box analog-in"><span class="num">A</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">B</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">C</span></div></div></div></div>
       </div></div>
-      <div class="ver-panel" id="yangxiu-yx-detail"><div class="detail-section"><div class="detail-note">扬修端子号因型号和配置不同而异，以铭牌接线图为准。调试方法与伯纳德/西门子2SA3相同。</div></div></div>
-      <div class="ver-panel active" id="yangxiu-yx-debug"><div class="debug-section">
+      <div class="ver-panel" id="bernard-yx-detail"><div class="detail-section"><div class="detail-note">扬修端子号因型号和配置不同而异，以铭牌接线图为准。调试方法与伯纳德/西门子2SA3相同。</div></div></div>
+      <div class="ver-panel active" id="bernard-yx-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
-    <p>扬州电力设备修造厂（扬修）常规型电动执行机构，国产老牌，主产DZW/DQW与2SA3系列（西门子2SA3技术路线），接线端子、行程/力矩调整方法与西门子2SA3基本相同。配LK-3或类似控制模块，远方/就地切换。通电前检查：①动力电源U/V/W（L1/L2/L3）三相380V，电机S2短时工作制；②远程控制开/关/公共端子接线；③行程开关S1-S4（开到位/关到位）；④电位器A/B/C（阀位远传，1KΩ）；⑤力矩开关触点。首次通电：手动到50%位置，点动验证旋向，<strong>行程控制机构下中传小齿轮顺时针转为开</strong>，方向反了调换任意两根电源线。相序接反会导致力矩和行程机构均不起作用！</p>
+    <p>扬州电力设备修造厂（扬修）常规型电动执行机构，国产老牌，<strong>技术源自伯纳德</strong>，接线端子、行程/力矩调整方法与伯纳德ST/西门子2SA3基本相同。配LK-3或类似控制模块，远方/就地切换。通电前检查：①动力电源U/V/W（L1/L2/L3）三相380V，电机S2短时工作制；②远程控制开/关/公共端子接线；③行程开关S1-S4（开到位/关到位）；④电位器A/B/C（阀位远传，1KΩ）；⑤力矩开关触点。首次通电：手动到50%位置，点动验证旋向，<strong>行程控制机构下中传小齿轮顺时针转为开</strong>，方向反了调换任意两根电源线。相序接反会导致力矩和行程机构均不起作用！</p>
   </div>
   <div class="debug-block"><h4><span class="step-num">2</span>关到位行程设定（机械凸轮式）</h4>
     <ul>
@@ -3779,7 +3782,7 @@
     <p>
       <a href="https://www.docin.com/p-1960122501.html" target="_blank">扬修电动门的调试及常见故障处理（转矩控制机构调整/行程控制机构调整/从小转矩逐渐增大）</a><br>
       <a href="https://m.hvacr.cn/sells/2559547.html" target="_blank">DZW/扬修行程开关力矩开关调整方法（7.1力矩调整先关后开/户外型压下旋转/7.2行程调整）</a><br>
-      扬修常规型调试方法与西门子2SA3基本相同。具体以执行器铭牌接线图号为准或联系扬州电力设备修造厂
+      扬修常规型技术源自伯纳德，调试方法与伯纳德ST完全相同。具体以执行器铭牌接线图号为准或联系扬州电力设备修造厂
     </p>
   </div>
 </div></div>
@@ -3791,14 +3794,14 @@
   
     <div class="series-panel" id="yangxiu-dzw">
 <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-dzw','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-dzw','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-dzw','detail',this)">端子表</button></div>
-<div class="ver-panel" id="yangxiu-dzw-simple"><div class="simple-section">
+<div class="ver-panel" id="bernard-dzw-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修DZW多回转</h3><div class="term-desc">扬州电力设备修造厂<strong>DZW系列多回转阀门电动装置</strong>，常规户外型。端子1-40，<strong>机械凸轮式</strong>行程设定。内置空气开关Q、接触器KO/KC、热继电器FR、行程开关LSO/LSC、转矩开关TSO/TSC（DK3-2A）。A端子为常规产品（行程开/关各一对常开常闭无源触点），B端子为特殊订货（各三对）。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V 50Hz，经空气开关Q接入，电机S2短时工作制</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">QC现场/远控转换开关，就地SBO/SBC按钮，远方开关量指令</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">LSO/LSC行程开关，A端子各一对常开常闭，B端子各三对</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 热保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">TSO/TSC转矩开关DK3-2A，TH热敏开关（特殊订货），FR热继电器过载保护</div></div>
 </div></div>
-<div class="ver-panel" id="yangxiu-dzw-detail"><div class="detail-section">
+<div class="ver-panel" id="bernard-dzw-detail"><div class="detail-section">
 <div class="detail-note">DZW系列端子1-40，<strong>A端子常规产品（行程开/关各一对常开常闭），B端子特殊订货（各三对）</strong>。以铭牌接线图为准。内置完整电气控制元件。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V，经空气开关Q</td></tr>
@@ -3809,7 +3812,7 @@
 <tr class="status-row"><td class="t-num">TH</td><td class="t-signal">热敏开关</td><td class="t-func">电机过热保护（特殊订货）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="yangxiu-dzw-debug"><div class="debug-section">
+<div class="ver-panel active" id="bernard-dzw-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>DZW系列多回转阀门电动装置</strong>，常规户外型，用于闸阀、截止阀等多回转阀门。端子1-40，<strong>机械凸轮式</strong>行程设定。内置空气开关Q、接触器KO/KC、热继电器FR、行程开关LSO/LSC、转矩开关TSO/TSC（DK3-2A型）。A端子=常规产品（行程开/关各一对常开常闭无源触点），B端子=特殊订货（各三对）。通电前检查：①动力电源1(L1)/2(L2)/3(L3)三相380V 50Hz，经空气开关Q接入，电机S2短时工作制；②QC现场/远控转换开关，就地SBO/SBC按钮，远方开/关/停/公共端子；③开到位S1-S2、关到位S3-S4（LSO/LSC行程开关）；④开力矩D1-D2、关力矩D3-D4（TSO/TSC DK3-2A转矩开关）；⑤FR热继电器、TH热敏开关（特殊订货）。首次通电：手轮将阀门开启至50%开度，按下开/关键检查旋向，<strong>不一致立即按停止，调换三相电源任意二相</strong>。相序接反会导致力矩和行程机构均不起作用！提前把机械限位顶丝退出来，防止顶伤。</p>
   </div>
@@ -3893,14 +3896,14 @@
 <!-- ==================== 4. DQW 部分回转 ==================== -->
     <div class="series-panel" id="yangxiu-dqw">
 <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-dqw','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-dqw','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-dqw','detail',this)">端子表</button></div>
-<div class="ver-panel" id="yangxiu-dqw-simple"><div class="simple-section">
+<div class="ver-panel" id="bernard-dqw-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修DQW部分回转</h3><div class="term-desc">扬州电力设备修造厂<strong>DQW系列部分回转阀门电动装置</strong>，用于蝶阀、球阀等90°阀门。DQJW为角行程调节型。<strong>端子定义与DZW基本相同</strong>，有户外型和隔爆型（dI/dⅡBT4），户外型和隔爆型端子接线图不同。内置完整电气控制元件。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V，经空气开关Q，变压器B供电控制回路</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">QC现场/远控转换，SO/SC/SS按钮，端子同DZW</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈 + 开度表</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">LSO/LSC行程开关，CB开度表显示阀门位置，YD/RD/GD指示灯</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">转矩开关机械调整，FR热继电器，TH热敏开关，FU熔断器保护</div></div>
 </div></div>
-<div class="ver-panel" id="yangxiu-dqw-detail"><div class="detail-section">
+<div class="ver-panel" id="bernard-dqw-detail"><div class="detail-section">
 <div class="detail-note">DQW系列<strong>端子定义与DZW基本相同</strong>。户外型和隔爆型端子接线图不同（分别见图8和图9），调试时先查电机铭牌和执行器铭牌，按铭牌接线图要求接线。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V</td></tr>
@@ -3911,7 +3914,7 @@
 <tr class="status-row"><td class="t-num">TH/FR/FU</td><td class="t-signal">保护元件</td><td class="t-func">热敏/热继电器/熔断器</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="yangxiu-dqw-debug"><div class="debug-section">
+<div class="ver-panel active" id="bernard-dqw-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>DQW系列部分回转阀门电动装置</strong>，用于蝶阀、球阀等90°阀门。DQJW为角行程调节型。<strong>端子定义与DZW基本相同</strong>，有户外型和隔爆型（dI/dⅡBT4），<strong>户外型和隔爆型端子接线图不同</strong>（分别见图8和图9）。内置空气开关Q、接触器KO/KC、热继电器FR、变压器B、行程开关LSO/LSC、转矩开关TSO/TSC、开度表CB、指示灯YD/RD/GD。通电前检查：①先查电机铭牌和执行器铭牌，按铭牌接线图要求接线（户外型/隔爆型不同！）；②动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V，经空气开关Q，变压器B供电控制回路；③QC现场/远控转换，SO/SC/SS就地按钮，远方开/关/停/公共端子；④开到位S1-S2、关到位S3-S4；⑤开力矩D1-D2、关力矩D3-D4；⑥CB开度表，TH/FR/FU保护元件。根据额定电流选择电缆，电缆末端用压接端子。首次通电：手动到50%位置，点动验证旋向，方向反了调换任意两根电源线。</p>
   </div>
@@ -3995,14 +3998,14 @@
 <!-- ==================== 5. 扬修 2SA3 ==================== -->
     <div class="series-panel" id="yangxiu-yangxiu-2sa3">
 <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-yangxiu-2sa3','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','detail',this)">端子表</button></div>
-<div class="ver-panel" id="yangxiu-yangxiu-2sa3-simple"><div class="simple-section">
+<div class="ver-panel" id="bernard-yangxiu-2sa3-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修2SA3系列</h3><div class="term-desc">扬州电力设备修造厂生产的<strong>2SA3系列多回转电动执行机构</strong>，<strong>西门子技术</strong>，非侵入式设计。法兰号F07到F30，型号2SA3010/3011/3020/3021/3030/3031/3040/3041等。<strong>端子定义与西门子2SA3完全相同</strong>，通过红外设定器或现场按键操作。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V，端子同西门子2SA3</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">端子同西门子2SA3，非侵入式红外设定</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈 + 4-20mA</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA反馈</span><div class="term-box analog-out"><span class="num">+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">-</span></div></div></div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 故障</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">端子同西门子2SA3，力矩通过设定器设定，非机械调整</div></div>
 </div></div>
-<div class="ver-panel" id="yangxiu-yangxiu-2sa3-detail"><div class="detail-section">
+<div class="ver-panel" id="bernard-yangxiu-2sa3-detail"><div class="detail-section">
 <div class="detail-note">扬修2SA3系列<strong>端子定义与西门子2SA3完全相同</strong>，请参考西门子2SA3端子表。非侵入式设计，通过红外设定器或现场按键设定行程和力矩。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V（同西门子2SA3）</td></tr>
@@ -4012,7 +4015,7 @@
 <tr class="analog-row"><td class="t-num">+/-</td><td class="t-signal">4-20mA</td><td class="t-func">阀位反馈输出（调节型）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="yangxiu-yangxiu-2sa3-debug"><div class="debug-section">
+<div class="ver-panel active" id="bernard-yangxiu-2sa3-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂生产的<strong>2SA3系列多回转电动执行机构</strong>，<strong>西门子技术</strong>，非侵入式设计（无需开盖即可调试）。法兰号F07到F30，型号2SA3010/3011/3020/3021/3030/3031/3040/3041等。<strong>端子定义与西门子2SA3完全相同</strong>，通过红外设定器或现场按键操作。力矩通过设定器设定（非机械弹簧调整），与DZW/DQW不同。通电前检查：①检查执行机构及阀门是否正常，手动操作检查连接；②查看电机铭牌、执行机构铭牌、电机接线图和执行机构接线图；③按铭牌要求接线，根据额定电流选择电缆，电缆末端裸露部分使用压接端子；④动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V；⑤远程控制开/关/停/公共端子；⑥开到位S1-S2、关到位S3-S4反馈；⑦力矩/故障D1-D4；⑧4-20mA反馈+/-（调节型）。首次通电：手轮将执行机构运行至行程中间位置，电动操作"开"或"关"，运行时间尽可能短，检查旋转方向是否正确，<strong>方向反了调换任意两根电源线</strong>。</p>
   </div>
@@ -4115,14 +4118,14 @@
 <!-- ==================== 6. LQA ==================== -->
     <div class="series-panel" id="yangxiu-lqa">
 <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-lqa','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-lqa','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-lqa','detail',this)">端子表</button></div>
-<div class="ver-panel" id="yangxiu-lqa-simple"><div class="simple-section">
+<div class="ver-panel" id="bernard-lqa-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>LQA立式曲柄式</h3><div class="term-desc">扬州电力设备修造厂<strong>LQA系列立式曲柄式部分回转阀门电动装置</strong>，用于蝶阀、球阀等部分回转阀门。<strong>接线方式与DQW常规型基本一致</strong>，有户外型和隔爆型。立式安装，曲柄连杆机构输出角行程。动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈，转矩保护。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V（L/N），端子同DZW/DQW</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">远程开/关/停指令，公共端，端子同DZW</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">行程开关反馈（开/关到位），端子同DZW/DQW</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">转矩保护，机械凸轮式调整，端子同DZW/DQW</div></div>
 </div></div>
-<div class="ver-panel" id="yangxiu-lqa-detail"><div class="detail-section">
+<div class="ver-panel" id="bernard-lqa-detail"><div class="detail-section">
 <div class="detail-note">LQA系列<strong>接线方式与DQW常规型基本一致</strong>：动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈（开/关到位），转矩保护。以铭牌接线图为准。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V（同DZW）</td></tr>
@@ -4131,7 +4134,7 @@
 <tr class="status-row"><td class="t-num">D1-D4</td><td class="t-signal">力矩开关</td><td class="t-func">开/关向过力矩（同DZW）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="yangxiu-lqa-debug"><div class="debug-section">
+<div class="ver-panel active" id="bernard-lqa-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>LQA系列立式曲柄式部分回转阀门电动装置</strong>，用于蝶阀、球阀等部分回转阀门。<strong>接线方式与DQW常规型基本一致</strong>，有户外型和隔爆型。立式安装，曲柄连杆机构输出角行程（0-90°）。动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈（开/关到位），转矩保护。通电前检查：①动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V（L/N），端子同DZW/DQW；②远程控制开/关/停/公共端子；③开到位S1-S2、关到位S3-S4反馈；④开力矩D1-D2、关力矩D3-D4；⑤立式安装基础牢固，曲柄连杆机构与阀门连接正确。首次通电：手动到50%位置，点动验证旋向和曲柄运动方向，方向反了调换任意两根电源线。相序接反会导致力矩和行程机构均不起作用！</p>
   </div>
@@ -4211,11 +4214,7 @@
     </p>
   </div>
 </div></div>
-</div>
-  </div>
-
-  <!-- ==================== 西博思 SIPOS ==================== -->
-  <div </div>class="brand-panel" id="brand-sipos">
+</div></div><div class="brand-panel" id="brand-sipos">
     <div class="series-tabs">
       <button class="tab-btn" onclick="showSeries('sipos','ecotron',this)">ECOTRON<span class="sub">经济型·开关量</span></button>
       <button class="tab-btn" onclick="showSeries('sipos','profitron',this)">PROFITRON<span class="sub">专业型·调节型</span></button>
@@ -5257,10 +5256,9 @@
       <p>• <strong style="color:#81c784">气动定位器-螺丝刀触发</strong>：山武AVP300（输入18mA+转开关90°）</p>
       <p style="margin-top:8px"><strong style="color:#ef5350">⚠️ 重要提示：</strong>各品牌端子号因型号、配置、订货代码不同而异，以上为常见默认配置。<strong>现场接线必须以执行器铭牌上的接线图号和实际接线图为准！</strong></p>
     </div>
-  </div>
 
   <div class="footer">
-    基于各品牌官方说明书和技术资料整理 · 瑞基/罗托克/澳托克/EMG/上仪/西门子/AUMA/伯纳德、扬修<br>
+    基于各品牌官方说明书和技术资料整理 · 瑞基/罗托克/澳托克/EMG/上仪/西门子/AUMA/伯纳德/扬修<br>
     现场接线请以执行器铭牌接线图号为准 · 调试前请仔细阅读对应型号说明书
   </div>
 
@@ -5302,6 +5300,7 @@ function showBrand(name, btn) {
     var debugBtn = activeSeries.querySelector('.ver-btn[onclick*="\'debug\'"]');
     if (debugBtn) debugBtn.classList.add('active');
   }
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 // 页面加载时默认显示瑞基的速查表，并修复多余的active类
