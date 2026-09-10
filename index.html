@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>电动·气动执行机构接线调试手册（手机版）</title>
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
+<title>执行机构调试手册（手机版）</title>
+<style>  * { margin:0; padding:0; box-sizing:border-box; }
   html, body {
     width: 100%;
     max-width: 100%;
@@ -13,7 +12,7 @@
   }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
-    background: linear-gradient(180deg, #e5e7eb 0%, #f3f4f6 100%);
+    background: #d8dade;
     padding: 0;
     margin: 0;
     -webkit-text-size-adjust: 100%;
@@ -25,9 +24,9 @@
     max-width: 480px;
     min-width: 0;
     margin: 0 auto;
-    background: #f9fafb;
+    background: #f2f2f7;
     min-height: 100vh;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
   }
   .phone > * {
@@ -35,181 +34,149 @@
     box-sizing: border-box;
   }
 
-  /* 顶部标题 - 深灰炭黑工业风 */
+  /* 顶部标题 - iOS 大标题导航 */
   .top-bar {
-    background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #4b5563 100%);
-    color: #fff;
-    padding: 22px 18px 18px;
+    background: #f2f2f7;
+    color: #1c1c1e;
+    padding: 16px 18px 8px;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
-  .top-bar::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%);
-    border-radius: 50%;
-  }
-  .top-bar::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, rgba(251, 146, 60, 0.12) 0%, transparent 70%);
-    border-radius: 50%;
-  }
+  .top-bar::before { content: none; }
+  .top-bar::after { content: none; }
   .top-bar h1 {
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 800;
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    letter-spacing: 0.2px;
     position: relative;
     z-index: 1;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-shadow: none;
+    color: #1c1c1e;
   }
   .top-bar p {
     font-size: 11px;
-    opacity: 0.8;
+    opacity: 1;
     position: relative;
     z-index: 1;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
+    color: #8e8e93;
   }
 
-  /* 品牌切换 - 深灰工业风 */
+  /* 品牌切换 - iOS 胶囊 */
   .brand-tabs {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    background: linear-gradient(180deg, #4b5563 0%, #374151 100%);
-    padding: 0 8px 0;
+    background: #f2f2f7;
+    padding: 6px 12px 8px;
     -webkit-overflow-scrolling: touch;
-    gap: 2px;
+    gap: 6px;
   }
   .brand-tabs::-webkit-scrollbar { display: none; }
   .brand-btn {
     flex-shrink: 0;
-    padding: 11px 15px;
+    padding: 8px 15px;
     border: none;
-    background: transparent;
+    background: #ffffff;
     font-size: 13px;
     font-weight: 600;
-    color: rgba(255,255,255,0.55);
+    color: #3c3c43;
     cursor: pointer;
-    border-radius: 8px 8px 0 0;
+    border-radius: 20px;
     position: relative;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
   }
   .brand-btn.active {
     color: #fff;
-    background: rgba(255,255,255,0.1);
+    background: #007aff;
     font-weight: 700;
   }
-  .brand-btn.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 24px;
-    height: 3px;
-    background: #f97316;
-    border-radius: 3px 3px 0 0;
-  }
+  .brand-btn.active::after { content: none; }
 
-  /* 系列切换 - 精致胶囊式 */
+  /* 系列切换 - iOS 胶囊 */
   .series-tabs {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 8px 10px;
+    background: #f2f2f7;
+    border-bottom: none;
+    padding: 2px 12px 10px;
     -webkit-overflow-scrolling: touch;
     gap: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    box-shadow: none;
   }
   .series-tabs::-webkit-scrollbar { display: none; }
   .tab-btn {
     flex-shrink: 0;
-    padding: 8px 14px;
+    padding: 7px 14px;
     border: none;
-    background: #f3f4f6;
+    background: #ffffff;
     font-size: 12px;
     font-weight: 600;
-    color: #6b7280;
+    color: #3c3c43;
     cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.25s ease;
+    border-radius: 18px;
+    transition: all 0.2s ease;
   }
   .tab-btn.active {
     color: #fff;
-    background: linear-gradient(135deg, #f97316, #fb923c);
-    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.35);
+    background: #007aff;
+    box-shadow: none;
   }
-  .tab-btn .sub { display:inline-block; font-size:9px; font-weight:400; color:#9ca3af; margin-top:1px; }
-  .tab-btn.active .sub { color:rgba(255,255,255,0.9); }
+  .tab-btn .sub { display:inline-block; font-size:9px; font-weight:400; color:#8e8e93; margin-top:1px; }
+  .tab-btn.active .sub { color:rgba(255,255,255,0.85); }
 
   .brand-panel { display: none; }
   .brand-panel.active { display: block; }
   .series-panel { display: none; }
   .series-panel.active { display: block; }
 
-  /* 版本切换 - 精致分段控件 */
+  /* 版本切换 - iOS 分段控件 */
   .version-tabs {
     display: flex;
-    background: #e5e7eb;
-    margin: 14px 16px 10px;
-    border-radius: 12px;
-    padding: 4px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    background: #e9e9eb;
+    margin: 12px 16px 12px;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: none;
   }
   .ver-btn {
     flex: 1;
-    padding: 10px;
+    padding: 9px;
     border: none;
     background: transparent;
     font-size: 13px;
     font-weight: 600;
-    color: #6b7280;
-    border-radius: 9px;
+    color: #3c3c43;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
   }
   .ver-btn.active {
-    background: #fff;
-    color: #c2410c;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    background: #ffffff;
+    color: #1c1c1e;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16);
     font-weight: 700;
   }
 
   .ver-panel { display: none; }
   .ver-panel.active { display: block; }
 
-  /* 简洁版 - 精致卡片 */
+  /* 接线图 - iOS 白色分组卡 */
   .simple-section { padding: 0 16px 18px; }
   .simple-block {
-    border-radius: 14px;
-    padding: 16px;
-    margin-bottom: 14px;
-    border: 1px solid;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: none;
+    background: #ffffff;
+    box-shadow: none;
     position: relative;
     overflow: hidden;
   }
-  .simple-block::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-  }
+  .simple-block::before { content: none; }
   .simple-block h3 {
     font-size: 14px;
     font-weight: 700;
@@ -217,39 +184,40 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: #1c1c1e;
   }
   .simple-block h3 .icon {
     width: 24px; height: 24px;
-    border-radius: 7px;
+    border-radius: 6px;
     display: flex; align-items: center; justify-content: center;
     font-size: 12px; color: #fff; font-weight: 700;
     flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: none;
   }
-  .block-power { border-color:#fed7aa; background:linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); }
-  .block-power::before { background: linear-gradient(90deg, #f97316, #fb923c); }
-  .block-power h3 { color:#9a3412; }
-  .block-power .icon { background:linear-gradient(135deg, #f97316, #ea580c); }
-  .block-short { border-color:#fecaca; background:linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); }
-  .block-short::before { background: linear-gradient(90deg, #ef4444, #f87171); }
-  .block-short h3 { color:#991b1b; }
-  .block-short .icon { background:linear-gradient(135deg, #ef4444, #dc2626); }
-  .block-control { border-color:#bfdbfe; background:linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
-  .block-control::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-  .block-control h3 { color:#1e40af; }
-  .block-control .icon { background:linear-gradient(135deg, #3b82f6, #2563eb); }
-  .block-feedback { border-color:#bbf7d0; background:linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
-  .block-feedback::before { background: linear-gradient(90deg, #22c55e, #4ade80); }
-  .block-feedback h3 { color:#166534; }
-  .block-feedback .icon { background:linear-gradient(135deg, #22c55e, #16a34a); }
-  .block-status { border-color:#e9d5ff; background:linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); }
-  .block-status::before { background: linear-gradient(90deg, #a855f7, #c084fc); }
-  .block-status h3 { color:#6b21a8; }
-  .block-status .icon { background:linear-gradient(135deg, #a855f7, #9333ea); }
-  .block-note { border-color:#d1d5db; background:linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); }
-  .block-note::before { background: linear-gradient(90deg, #6b7280, #9ca3af); }
-  .block-note h3 { color:#374151; }
-  .block-note .icon { background:linear-gradient(135deg, #6b7280, #4b5563); }
+  .block-power { border:none; background:#ffffff; }
+  .block-power::before { content: none; }
+  .block-power h3 { color:#1c1c1e; }
+  .block-power .icon { background:#ff9500; }
+  .block-short { border:none; background:#ffffff; }
+  .block-short::before { content: none; }
+  .block-short h3 { color:#1c1c1e; }
+  .block-short .icon { background:#ff3b30; }
+  .block-control { border:none; background:#ffffff; }
+  .block-control::before { content: none; }
+  .block-control h3 { color:#1c1c1e; }
+  .block-control .icon { background:#007aff; }
+  .block-feedback { border:none; background:#ffffff; }
+  .block-feedback::before { content: none; }
+  .block-feedback h3 { color:#1c1c1e; }
+  .block-feedback .icon { background:#34c759; }
+  .block-status { border:none; background:#ffffff; }
+  .block-status::before { content: none; }
+  .block-status h3 { color:#1c1c1e; }
+  .block-status .icon { background:#af52de; }
+  .block-note { border:none; background:#ffffff; }
+  .block-note::before { content: none; }
+  .block-note h3 { color:#1c1c1e; }
+  .block-note .icon { background:#8e8e93; }
 
   .term-row {
     display: flex;
@@ -261,39 +229,39 @@
   .term-box {
     min-width: 52px;
     height: 46px;
-    border: 2px solid;
-    border-radius: 9px;
+    border: 1.5px solid;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #fff;
     padding: 0 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    box-shadow: none;
   }
   .term-box .num { font-size: 15px; font-weight: 800; line-height: 1; }
-  .term-box .label { font-size: 9px; margin-top: 3px; color: #6b7280; text-align: center; line-height: 1.2; font-weight: 500; }
-  .term-box.power { border-color:#f97316; } .term-box.power .num { color:#9a3412; }
-  .term-box.short { border-color:#ef4444; background:#fef2f2; } .term-box.short .num { color:#991b1b; }
-  .term-box.control { border-color:#3b82f6; } .term-box.control .num { color:#1e40af; }
-  .term-box.feedback { border-color:#22c55e; } .term-box.feedback .num { color:#166534; }
-  .term-box.status { border-color:#a855f7; } .term-box.status .num { color:#6b21a8; }
-  .term-box.analog-in { border-color:#0891b2; } .term-box.analog-in .num { color:#155e75; }
-  .term-box.analog-out { border-color:#db2777; } .term-box.analog-out .num { color:#9d174d; }
+  .term-box .label { font-size: 9px; margin-top: 3px; color: #8e8e93; text-align: center; line-height: 1.2; font-weight: 500; }
+  .term-box.power { border-color:#ff9500; } .term-box.power .num { color:#c93400; }
+  .term-box.short { border-color:#ff3b30; background:#fff5f5; } .term-box.short .num { color:#d70015; }
+  .term-box.control { border-color:#007aff; } .term-box.control .num { color:#0056cc; }
+  .term-box.feedback { border-color:#34c759; } .term-box.feedback .num { color:#1e7e34; }
+  .term-box.status { border-color:#af52de; } .term-box.status .num { color:#8944ab; }
+  .term-box.analog-in { border-color:#5ac8fa; } .term-box.analog-in .num { color:#0a7d9e; }
+  .term-box.analog-out { border-color:#ff2d55; } .term-box.analog-out .num { color:#d30982; }
 
   .pair-wrap {
     display: inline-flex;
     align-items: center;
-    border: 2px dashed;
-    border-radius: 11px;
+    border: 1.5px dashed;
+    border-radius: 10px;
     padding: 35px 10px 8px;
     position: relative;
     gap: 6px;
   }
-  .pair-wrap.feedback { border-color:#22c55e; background:#f0fdf4; }
-  .pair-wrap.status { border-color:#a855f7; background:#faf5ff; }
-  .pair-wrap.analog { border-color:#0891b2; background:#ecfeff; }
-  .pair-wrap.control { border-color:#3b82f6; background:#eff6ff; }
+  .pair-wrap.feedback { border-color:#34c759; background:#f4fcf6; }
+  .pair-wrap.status { border-color:#af52de; background:#faf5fd; }
+  .pair-wrap.analog { border-color:#5ac8fa; background:#f2fbfe; }
+  .pair-wrap.control { border-color:#007aff; background:#f2f7ff; }
   .pair-wrap .pair-tag {
     position: absolute;
     top: 17.5px;
@@ -302,25 +270,25 @@
     font-size: 10px;
     font-weight: 700;
     padding: 2px 8px;
-    border-radius: 8px;
+    border-radius: 7px;
     color: #fff;
     white-space: nowrap;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12);
   }
-  .pair-wrap.feedback .pair-tag { background:linear-gradient(135deg, #22c55e, #16a34a); }
-  .pair-wrap.status .pair-tag { background:linear-gradient(135deg, #a855f7, #9333ea); }
-  .pair-wrap.analog .pair-tag { background:linear-gradient(135deg, #0891b2, #0e7490); }
-  .pair-wrap.control .pair-tag { background:linear-gradient(135deg, #3b82f6, #2563eb); }
+  .pair-wrap.feedback .pair-tag { background:#34c759; }
+  .pair-wrap.status .pair-tag { background:#af52de; }
+  .pair-wrap.analog .pair-tag { background:#5ac8fa; }
+  .pair-wrap.control .pair-tag { background:#007aff; }
 
-  .plus-sign { font-size: 16px; font-weight: 700; color: #9ca3af; }
-  .term-desc { font-size: 12px; color: #4b5563; line-height: 1.7; flex: 1; min-width: 110px; }
-  .term-desc strong { color: #1f2937; }
+  .plus-sign { font-size: 16px; font-weight: 700; color: #c7c7cc; }
+  .term-desc { font-size: 12px; color: #3c3c43; line-height: 1.7; flex: 1; min-width: 110px; }
+  .term-desc strong { color: #1c1c1e; }
 
   .short-demo { display: flex; flex-direction: column; align-items: center; margin-bottom: 10px; }
   .short-u {
     width: 72px;
     height: 26px;
-    border: 3px solid #ef4444;
+    border: 3px solid #ff3b30;
     border-bottom: none;
     border-radius: 16px 16px 0 0;
     position: relative;
@@ -331,31 +299,31 @@
     top: -11px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #ef4444, #dc2626);
+    background: #ff3b30;
     color: #fff;
     font-size: 10px;
     font-weight: 700;
     padding: 2px 8px;
-    border-radius: 8px;
+    border-radius: 7px;
     white-space: nowrap;
-    box-shadow: 0 2px 6px rgba(239,68,68,0.35);
+    box-shadow: none;
   }
   .short-boxes { display: flex; gap: 14px; }
   .short-row-flex { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
   .warn-text {
     font-size: 11px;
-    color: #991b1b;
-    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+    color: #d70015;
+    background: #fff0f0;
     padding: 9px 12px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 8px;
     line-height: 1.7;
     display: block;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ff3b30;
   }
 
-  /* 详细版 - 精致表格 */
+  /* 端子表 - iOS 分组表格 */
   .detail-section { padding: 0 16px 18px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .detail-table {
     width: 100%;
@@ -366,11 +334,12 @@
     margin-bottom: 14px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    background:#ffffff;
+    box-shadow: none;
   }
   .detail-table th {
-    background: linear-gradient(135deg, #374151, #4b5563);
-    color: #fff;
+    background: #f2f2f7;
+    color: #1c1c1e;
     padding: 10px 8px;
     text-align: left;
     font-size: 12px;
@@ -378,50 +347,49 @@
   }
   .detail-table td {
     padding: 9px 8px;
-    border-bottom: 1px solid #f3f4f6;
+    border-bottom: 1px solid #ebebed;
     vertical-align: top;
   }
-  .detail-table tr:nth-child(even) { background: #f9fafb; }
+  .detail-table tr:nth-child(even) { background: transparent; }
   .detail-table tr:last-child td { border-bottom: none; }
   .detail-table .t-num { font-weight: 800; font-size: 13px; text-align: center; width: 48px; }
-  .detail-table .t-signal { font-weight: 600; width: 80px; font-size: 11px; color: #374151; }
-  .detail-table .t-func { color: #6b7280; font-size: 11px; line-height: 1.6; }
-  .detail-table tr.short-row { background:#fef2f2; } .detail-table tr.short-row .t-num { color:#991b1b; }
-  .detail-table tr.power-row .t-num { color:#9a3412; }
-  .detail-table tr.control-row .t-num { color:#1e40af; }
-  .detail-table tr.feedback-row .t-num { color:#166534; }
-  .detail-table tr.status-row .t-num { color:#6b21a8; }
-  .detail-table tr.analog-row .t-num { color:#155e75; }
+  .detail-table .t-signal { font-weight: 600; width: 80px; font-size: 11px; color: #1c1c1e; }
+  .detail-table .t-func { color: #8e8e93; font-size: 11px; line-height: 1.6; }
+  .detail-table tr.short-row { background:#fff5f5; } .detail-table tr.short-row .t-num { color:#d70015; }
+  .detail-table tr.power-row .t-num { color:#c93400; }
+  .detail-table tr.control-row .t-num { color:#0056cc; }
+  .detail-table tr.feedback-row .t-num { color:#1e7e34; }
+  .detail-table tr.status-row .t-num { color:#8944ab; }
+  .detail-table tr.analog-row .t-num { color:#0a7d9e; }
 
   .detail-note {
-    background: linear-gradient(135deg, #fffbeb, #fef3c7);
-    border-left: 4px solid #f59e0b;
+    background: #fff9f0;
+    border-left: 4px solid #ff9500;
     padding: 12px 14px;
     border-radius: 0 12px 12px 0;
     margin-bottom: 14px;
     font-size: 12px;
-    color: #78350f;
+    color: #7a4e00;
     line-height: 1.8;
-    box-shadow: 0 2px 8px rgba(245,158,11,0.1);
+    box-shadow: none;
   }
-  .detail-note strong { color: #92400e; }
+  .detail-note strong { color: #b25e00; }
 
-  /* 调试步骤 - 精致时间线式 */
+  /* 调试步骤 - iOS 白色分组卡 */
   .debug-section { padding: 0 16px 18px; }
   .debug-block {
-    background: #fff;
-    border-radius: 14px;
-    padding: 16px;
-    margin-bottom: 14px;
-    border-left: 4px solid;
-    border-color: #f97316;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: none;
     position: relative;
   }
   .debug-block h4 {
     font-size: 14px;
     font-weight: 700;
-    color: #9a3412;
+    color: #1c1c1e;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -429,59 +397,50 @@
   }
   .debug-block h4 .step-num {
     width: 22px; height: 22px;
-    background: linear-gradient(135deg, #f97316, #fb923c);
+    background: #007aff;
     color: #fff;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     font-size: 11px;
     font-weight: 700;
     flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(249,115,22,0.3);
+    box-shadow: none;
   }
   .debug-block p, .debug-block .debug-text, .debug-block li {
     font-size: 12px;
-    color: #4b5563;
+    color: #3c3c43;
     line-height: 1.9;
   }
   .debug-block ul { padding-left: 18px; }
   .debug-text { display:block; margin:0 0 10px; }
   .debug-block .key {
-    background: linear-gradient(135deg, #ffedd5, #fed7aa);
+    background: #e9f2ff;
     padding: 2px 7px;
     border-radius: 5px;
     font-weight: 600;
-    color: #c2410c;
+    color: #0056cc;
     font-size: 11px;
   }
   .debug-block .warn {
-    color: #dc2626;
+    color: #ff3b30;
     font-weight: 600;
   }
 
-  /* 底部汇总 - 精致深色区域 */
+  /* 底部速查 - iOS 浅色分组 */
   .summary-section {
-    padding: 18px 16px;
-    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    color: #fff;
+    padding: 16px 16px 20px;
+    background: #f2f2f7;
+    color: #1c1c1e;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     position: relative;
     overflow: hidden;
   }
-  .summary-section::before {
-    content: '';
-    position: absolute;
-    top: -30%;
-    right: -10%;
-    width: 180px;
-    height: 180px;
-    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
-    border-radius: 50%;
-  }
+  .summary-section::before { content: none; }
   .summary-section h3 {
     font-size: 15px;
-    margin-bottom: 12px;
-    color: #fb923c;
+    margin-bottom: 10px;
+    color: #1c1c1e;
     font-weight: 800;
     position: relative;
     z-index: 1;
@@ -492,6 +451,9 @@
     margin-bottom: 12px;
     position: relative;
     z-index: 1;
+    background:#ffffff;
+    border-radius:12px;
+    overflow:hidden;
   }
   .summary-table {
     width: 100%;
@@ -500,31 +462,32 @@
     font-size: 10px;
   }
   .summary-table th {
-    background: rgba(255,255,255,0.08);
-    padding: 8px 4px;
+    background: #f2f2f7;
+    padding: 8px 6px;
     text-align: left;
     font-size: 10px;
-    color: #fb923c;
+    color: #1c1c1e;
     font-weight: 700;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid #ebebed;
   }
   .summary-table td {
-    padding: 7px 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 6px;
+    border-bottom: 1px solid #f0f0f2;
     font-size: 10px;
     line-height: 1.5;
+    color:#3c3c43;
   }
-  .summary-table .red { color:#fca5a5; font-weight:700; }
-  .summary-table .green { color:#86efac; }
-  .summary-table .blue { color:#93c5fd; }
-  .summary-table .brand { color:#fb923c; font-weight:700; }
+  .summary-table .red { color:#ff3b30; font-weight:700; }
+  .summary-table .green { color:#1e7e34; }
+  .summary-table .blue { color:#007aff; }
+  .summary-table .brand { color:#007aff; font-weight:700; }
 </style>
 </head>
 <body>
 <div class="phone">
 
   <div class="top-bar">
-    <h1>电动·气动执行机构接线调试手册</h1>
+    <h1>执行机构调试手册</h1>
     <p>13大品牌73系列 · 基于官方说明书 · 手机现场速查</p>
   </div>
 
@@ -1542,6 +1505,7 @@
 <div class="simple-block block-power"><h3><span class="icon">电</span>电机电源 + 电磁阀</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-box power"><span class="num">YV1</span><span class="label">开阀</span></div><div class="term-box power"><span class="num">YV2</span><span class="label">关阀</span></div><div class="term-desc">X2端子排：U/V/W接三相380V电机电源；YV1/YV2接电磁阀线圈（开阀/关阀电磁阀，DC 24V或AC 220V按铭牌）</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接</h3><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="term-desc">X1控制端子排：<strong>1号和21号</strong>短接（X1控制排，开关型必须短接）</div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令（X1）</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开指令</span><div class="term-box control"><span class="num">4</span><span class="label">开+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关指令</span><div class="term-box control"><span class="num">3</span><span class="label">关+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-desc">X1控制端子排：20号是指令公共端。开指令接4-20，关指令接3-20。控制信号经内部逻辑驱动电机和对应电磁阀</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体上的<strong>LOCAL/REMOTE（现场-停止-远程）选择开关</strong>切换，属于内部控制、不是X1外接控制端子，DCS无需另接就/远控制线。开关打至<strong>REMOTE远程</strong>时，X1上的远程开/关指令（4-20、3-20）才生效；打至<strong>LOCAL就地</strong>时由本体操作开关就地点动，远程指令无效。若订货带<strong>远程使能附加端子（附加X1）</strong>，还需接通该端子才允许远程，具体以铭牌接线图为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈（X1）</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span><span class="label">关+</span></div></div></div><div class="warn-text">⚠️ 开/关反馈、故障公共端都接5号，正端（9、7、10）<strong>不要接在一起</strong>！</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>故障反馈（X1）</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span><span class="label">故障+</span></div></div></div><div class="term-desc">故障反馈接5-10（电机过热/液压压力异常/油位低/内部故障），公共端5号</div></div>
 </div></div>
@@ -1579,6 +1543,7 @@
 <div class="simple-block block-note"><h3><span class="icon">说</span>ED老型号特点</h3><div class="term-desc">EMG<strong>老款电动执行器</strong>，电机直驱丝杠输出直线运动（电动直推型），结构简单可靠。采用<strong>机械凸轮限位开关</strong>和<strong>力矩开关</strong>，无智能控制板，所有设定通过机械调整完成。基本端子：动力电源、开关控制、限位反馈、力矩保护。适用于老厂改造和简单开关工况。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接端子1、2、3（L1、L2、L3），注意相序（相序错误方向相反，需调换任意两相）。PE接地端子单独接地</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关控制</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开控制</span><div class="term-box control"><span class="num">4</span><span class="label">开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">6</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关控制</span><div class="term-box control"><span class="num">5</span><span class="label">关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">6</span><span class="label">公共</span></div></div></div><div class="term-desc">6号为控制公共端。开控制接4-6，关控制接5-6（无源触点，由外部控制柜继电器驱动）。老型号无内供电源，控制电源由外部提供</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">ED为老型号机电式，本体无电子LOCAL/REMOTE选择开关，<strong>就地/远方由外部控制柜的选择开关（或转换继电器）实现</strong>。控制柜打至<strong>远程</strong>时，DCS开/关信号经柜内继电器接通执行器开（4-6）、关（5-6）端子；打至<strong>就地</strong>时由柜面就地按钮操作、DCS信号无效。就/远状态如需上送DCS，由控制柜内继电器提供一副触点，具体以随机说明书和铭牌接线图为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>限位反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开限位</span><div class="term-box feedback"><span class="num">7</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">8</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关限位</span><div class="term-box feedback"><span class="num">7</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">关+</span></div></div></div><div class="term-desc">机械凸轮限位开关：7为公共端，8=开到位触点（全开时闭合），9=关到位触点（全关时闭合）。无源触点，容量AC 250V/3A</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩保护 + 热保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">力矩开关</span><div class="term-box status"><span class="num">10</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">11</span><span class="label">常闭</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">热保护</span><div class="term-box status"><span class="num">12</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">13</span><span class="label">常闭</span></div></div></div><div class="term-desc">力矩开关10-11（过力矩时断开，串入电机控制回路），电机热保护12-13（过热时断开）。均为常闭触点，故障时断开切断电机电源</div></div>
 </div></div>
@@ -1616,7 +1581,8 @@
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">三相380V接小端子排<strong>4、5、6</strong>（U、V、W），接地线接端子排旁</div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接</h3><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="term-desc"><strong>1号和21号</strong>短接（开关型）</div></div>
         <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开指令</span><div class="term-box control"><span class="num">4</span><span class="label">开+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关指令</span><div class="term-box control"><span class="num">3</span><span class="label">关+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-desc">20号是指令公共端。开指令接4-20，关指令接3-20</div></div>
-        <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span><span class="label">关+</span></div></div></div><div class="warn-text">⚠️ 开反馈、关反馈、故障的<strong>公共端都接5号</strong>，但三根正端（9、7、10）<strong>切记不要接在一起</strong>！</div></div>
+        <div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体<strong>S1选择开关（现场-0-远程）</strong>切换，属于内部控制接线、不是对外控制端子，DCS无需另接就/远控制线。S1打至<strong>远程</strong>位时，X1上的远程开/关指令才生效；打至<strong>现场</strong>位时用本体<strong>S2开关（打开-停止-关闭）</strong>就地操作，远程指令无效。若订货带远程使能附加端子，需同时接通才允许远程，以铭牌接线图为准。</div></div>
+<div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span><span class="label">关+</span></div></div></div><div class="warn-text">⚠️ 开反馈、关反馈、故障的<strong>公共端都接5号</strong>，但三根正端（9、7、10）<strong>切记不要接在一起</strong>！</div></div>
         <div class="simple-block block-status"><h3><span class="icon">状</span>故障反馈</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span><span class="label">故障+</span></div></div></div><div class="term-desc">故障反馈接5-10，公共端同样是5号</div></div>
       </div></div>
       <div class="ver-panel" id="drehmo-dmc-detail"><div class="detail-section"><table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
@@ -1652,7 +1618,8 @@
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">小端子排4、5、6(U/V/W)接三相380V</div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">2</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">20</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">调节型：<strong>1⇆21</strong>和<strong>2⇆20</strong>两组短接</div></div>
         <div class="simple-block block-control"><h3><span class="icon">入</span> 4-20mA控制指令</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">控制指令</span><div class="term-box analog-in"><span class="num">22</span><span class="label">指令+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">4-20mA指令接22(+)和24(公共)</div></div>
-        <div class="simple-block block-feedback"><h3><span class="icon">出</span> 4-20mA阀位反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">阀位反馈</span><div class="term-box analog-out"><span class="num">23</span><span class="label">反馈+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">4-20mA阀位反馈接23(+)和24(公共)，与指令共用24号公共端</div></div>
+        <div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体<strong>LOCAL/REMOTE（S1）选择开关</strong>切换，属内部接线、不是对外端子，DCS无需另接就/远控制线。打至<strong>REMOTE远程</strong>时，远程4-20mA给定及开关量指令才生效；打至<strong>LOCAL就地</strong>时由本体S2开关就地操作、忽略远程信号。带远程使能附加端子的型号需接通该端子才允许远程，以铭牌接线图为准。</div></div>
+<div class="simple-block block-feedback"><h3><span class="icon">出</span> 4-20mA阀位反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">阀位反馈</span><div class="term-box analog-out"><span class="num">23</span><span class="label">反馈+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">4-20mA阀位反馈接23(+)和24(公共)，与指令共用24号公共端</div></div>
         <div class="simple-block block-status"><h3><span class="icon">状</span>开关反馈 + 故障</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span></div></div></div><div class="warn-text">⚠️ 开/关反馈、故障公共端都接5号，正端（9、7、10）<strong>不要接在一起</strong>！</div></div>
       </div></div>
       <div class="ver-panel" id="drehmo-dim-detail"><div class="detail-section"><table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
@@ -1689,6 +1656,7 @@
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">三相380V接小端子排<strong>4、5、6</strong>（U、V、W），接地线接端子排旁</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接</h3><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="term-desc"><strong>1号和21号</strong>短接（开关型，内供24V+与控制公共端）</div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开指令</span><div class="term-box control"><span class="num">4</span><span class="label">开+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关指令</span><div class="term-box control"><span class="num">3</span><span class="label">关+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-desc">20号是指令公共端。开指令接4-20，关指令接3-20，停止接2-20</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体<strong>S1选择开关（现场-0-远程）</strong>切换，属于内部控制接线、不是对外控制端子，DCS无需另接就/远控制线。S1打至<strong>远程</strong>位时，X1上的远程开/关指令才生效；打至<strong>现场</strong>位时用本体<strong>S2开关（打开-停止-关闭）</strong>就地操作，远程指令无效。若订货带远程使能附加端子，需同时接通才允许远程，以铭牌接线图为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span><span class="label">关+</span></div></div></div><div class="warn-text">⚠️ 开反馈、关反馈、故障的<strong>公共端都接5号</strong>，正端（9、7、10）<strong>切记不要接在一起</strong>！</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>故障反馈</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span><span class="label">故障+</span></div></div></div><div class="term-desc">故障反馈接5-10（过力矩/电机过热/内部故障），公共端同样是5号</div></div>
 </div></div>
@@ -1729,6 +1697,7 @@
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">小端子排4、5、6(U/V/W)接三相380V</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">2</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">20</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">调节型：<strong>1⇆21</strong>（内供24V）和<strong>2⇆20</strong>（模拟量公共端）两组短接</div></div>
 <div class="simple-block block-control"><h3><span class="icon">入</span> 4-20mA控制指令</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">控制指令</span><div class="term-box analog-in"><span class="num">22</span><span class="label">指令+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">4-20mA给定指令接22(+)和24(公共)，输入阻抗以官方技术数据表或执行器铭牌为准</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体<strong>LOCAL/REMOTE（S1）选择开关</strong>切换，属内部接线、不是对外端子，DCS无需另接就/远控制线。打至<strong>REMOTE远程</strong>时，远程4-20mA给定及开关量指令才生效；打至<strong>LOCAL就地</strong>时由本体S2开关就地操作、忽略远程信号。带远程使能附加端子的型号需接通该端子才允许远程，以铭牌接线图为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">出</span> 4-20mA阀位反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">阀位反馈</span><div class="term-box analog-out"><span class="num">23</span><span class="label">反馈+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">4-20mA阀位反馈接23(+)和24(公共)，与指令共用24号公共端，最大负载500Ω</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>开关反馈 + 故障</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span></div></div></div><div class="warn-text">⚠️ 开/关反馈、故障公共端都接5号，正端（9、7、10）<strong>不要接在一起</strong>！</div></div>
 </div></div>
@@ -1764,6 +1733,7 @@
 <div class="simple-block block-note"><h3><span class="icon">说</span>EVM/EVK特点</h3><div class="term-desc">EMG<strong>控制放大器/定位器</strong>，独立安装单元（壁挂/DIN导轨），与执行器分离安装。<strong>EVM</strong>=开关型定位器（接收开关量指令输出继电器控制执行器），<strong>EVK</strong>=调节型定位器（接收4-20mA输出模拟量/继电器控制）。内置PID运算，可独立完成阀门定位，无需DCS直接驱动执行器。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>工作电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L+</span></div><div class="term-box power"><span class="num">2</span><span class="label">N-</span></div><div class="term-desc">独立供电：AC 220V（1=L,2=N）或DC 24V（1=+,2=-），按铭牌确认。PE接地端子单独接地</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">入</span>控制指令输入</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开指令(EVM)</span><div class="term-box control"><span class="num">3</span><span class="label">开+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">5</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关指令(EVM)</span><div class="term-box control"><span class="num">4</span><span class="label">关+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">5</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA(EVK)</span><div class="term-box analog-in"><span class="num">6</span><span class="label">指令+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">7</span><span class="label">公共</span></div></div></div><div class="term-desc">EVM开关型：3=开，4=关，5=公共（无源触点）。EVK调节型：6(+)/7(-)接4-20mA给定</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">EVM/EVK为独立安装的控制放大器（壁挂/DIN导轨），其就地/远程切换方式依订货配置而定：需就地操作时通过面板按键或切换开关手动输出，切至远程时接受端子开关量指令（EVM：3开/4关/5公共）或4-20mA给定（EVK：6+/7-）。是否带远程使能端子以随机接线图和铭牌为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">出</span>输出至执行器</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开输出</span><div class="term-box feedback"><span class="num">8</span><span class="label">COM</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">NO</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关输出</span><div class="term-box feedback"><span class="num">10</span><span class="label">COM</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">11</span><span class="label">NO</span></div></div></div><div class="term-desc">继电器输出触点（8-9开，10-11关）接至执行器控制端子，触点容量AC 250V/5A。EVK额外输出4-20mA：12(+)/13(-)</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>阀位反馈 + 故障</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">阀位反馈</span><div class="term-box status"><span class="num">14</span><span class="label">反馈+</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">15</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障输出</span><div class="term-box status"><span class="num">16</span><span class="label">COM</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">17</span><span class="label">NO</span></div></div></div><div class="term-desc">4-20mA阀位反馈输出14(+)/15(公共)，故障继电器16-17（定位器故障/信号丢失时动作）</div></div>
 </div></div>
@@ -1801,6 +1771,7 @@
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">小端子排4、5、6(U/V/W)接三相380V。DR为90°转角输出，DA为直线推力输出</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">2</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">20</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">DR开关型：<strong>1⇆21</strong>短接。DA调节型：<strong>1⇆21</strong>和<strong>2⇆20</strong>两组短接</div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令 / 4-20mA</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">开指令(DR)</span><div class="term-box control"><span class="num">4</span><span class="label">开+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">关指令(DR)</span><div class="term-box control"><span class="num">3</span><span class="label">关+</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">20</span><span class="label">公共</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA(DA)</span><div class="term-box analog-in"><span class="num">22</span><span class="label">指令+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="term-desc">DR开关型：开4-20，关3-20。DA调节型：4-20mA给定接22(+)/24(公共)</div></div>
+<div class="simple-block block-status"><h3><span class="icon">就</span>就地/远方切换</h3><div class="term-desc">本机就/远由本体<strong>S1选择开关（现场-0-远程）</strong>切换，属内部接线、不是对外控制端子，DCS无需另接就/远控制线。S1打<strong>远程</strong>时，X1远程开/关指令（DR：4-20、3-20）或4-20mA给定（DA：22/24）才生效；打<strong>现场</strong>时用本体S2开关就地操作、远程无效。带远程使能附加端子的以铭牌接线图为准。</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈 / 阀位反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">9</span><span class="label">开+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关反馈</span><div class="term-box feedback"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">7</span><span class="label">关+</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">阀位反馈(DA)</span><div class="term-box analog-out"><span class="num">23</span><span class="label">反馈+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">24</span><span class="label">公共</span></div></div></div><div class="warn-text">⚠️ 开/关反馈、故障公共端都接5号，正端（9、7、10）<strong>不要接在一起</strong>！DA额外4-20mA阀位反馈23(+)/24(公共)</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>故障反馈</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">故障</span><div class="term-box status"><span class="num">5</span><span class="label">公共</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">10</span><span class="label">故障+</span></div></div></div><div class="term-desc">故障反馈接5-10，公共端5号（过力矩/电机过热/内部故障时动作）</div></div>
 </div></div>
@@ -5205,16 +5176,16 @@
       </tbody>
     </table>
     </div>
-    <div style="margin-top:12px;font-size:11px;line-height:1.7;color:#bbdefb">
-      <p><strong style="color:#ffd54f">调试方式分类：</strong></p>
-      <p>• <strong style="color:#81c784">红外设定器</strong>：罗托克IQ、西门子2SA30、瑞基全系列</p>
-      <p>• <strong style="color:#81c784">按键+显示屏菜单</strong>：AUMA、澳托克ATKQ、伯纳德智能型、西博思SIPOS（密码9044）</p>
-      <p>• <strong style="color:#81c784">拨码+Learn按键</strong>：EMG DMC/DiM</p>
-      <p>• <strong style="color:#81c784">机械凸轮式（无菜单）</strong>：西门子2SA3、伯纳德ST、扬修、上仪A系列</p>
-      <p>• <strong style="color:#81c784">气动定位器-按键自动整定</strong>：西门子PS2、ABB TZIDC、永泰YT-3300</p>
-      <p>• <strong style="color:#81c784">气动定位器-HART手操器</strong>：Fisher DVC6200（需475/TREX）</p>
-      <p>• <strong style="color:#81c784">气动定位器-螺丝刀触发</strong>：山武AVP300（输入18mA+转开关90°）</p>
-      <p style="margin-top:8px"><strong style="color:#ef5350">⚠️ 重要提示：</strong>各品牌端子号因型号、配置、订货代码不同而异，以上为常见默认配置。<strong>现场接线必须以执行器铭牌上的接线图号和实际接线图为准！</strong></p>
+    <div style="margin-top:12px;font-size:11px;line-height:1.7;color:#3c3c43">
+      <p><strong style="color:#b25e00">调试方式分类：</strong></p>
+      <p>• <strong style="color:#1e7e34">红外设定器</strong>：罗托克IQ、西门子2SA30、瑞基全系列</p>
+      <p>• <strong style="color:#1e7e34">按键+显示屏菜单</strong>：AUMA、澳托克ATKQ、伯纳德智能型、西博思SIPOS（密码9044）</p>
+      <p>• <strong style="color:#1e7e34">拨码+Learn按键</strong>：EMG DMC/DiM</p>
+      <p>• <strong style="color:#1e7e34">机械凸轮式（无菜单）</strong>：西门子2SA3、伯纳德ST、扬修、上仪A系列</p>
+      <p>• <strong style="color:#1e7e34">气动定位器-按键自动整定</strong>：西门子PS2、ABB TZIDC、永泰YT-3300</p>
+      <p>• <strong style="color:#1e7e34">气动定位器-HART手操器</strong>：Fisher DVC6200（需475/TREX）</p>
+      <p>• <strong style="color:#1e7e34">气动定位器-螺丝刀触发</strong>：山武AVP300（输入18mA+转开关90°）</p>
+      <p style="margin-top:8px"><strong style="color:#d70015">⚠️ 重要提示：</strong>各品牌端子号因型号、配置、订货代码不同而异，以上为常见默认配置。<strong>现场接线必须以执行器铭牌上的接线图号和实际接线图为准！</strong></p>
     </div>
 
 </div>
