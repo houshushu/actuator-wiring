@@ -152,7 +152,7 @@
     background: linear-gradient(135deg, #f97316, #fb923c);
     box-shadow: 0 2px 8px rgba(249, 115, 22, 0.35);
   }
-  .tab-btn .sub { display:block; font-size:9px; font-weight:400; color:#9ca3af; margin-top:1px; }
+  .tab-btn .sub { display:inline-block; font-size:9px; font-weight:400; color:#9ca3af; margin-top:1px; }
   .tab-btn.active .sub { color:rgba(255,255,255,0.9); }
 
   .brand-panel { display: none; }
@@ -528,35 +528,35 @@
 
   <!-- 品牌切换 -->
   <div class="brand-tabs">
-    <button class="brand-btn active" onclick="showBrand('raga',this)">瑞基 RAGA</button>
-    <button class="brand-btn" onclick="showBrand('rotork',this)">罗托克 Rotork</button>
-    <button class="brand-btn" onclick="showBrand('autork',this)">澳托克 Autork</button>
-    <button class="brand-btn" onclick="showBrand('emg',this)">德瑞摩 DREHMO</button>
-    <button class="brand-btn" onclick="showBrand('shyi',this)">上仪 SHANGYI</button>
-    <button class="brand-btn" onclick="showBrand('siemens',this)">西门子 SIEMENS</button>
-    <button class="brand-btn" onclick="showBrand('auma',this)">欧玛 AUMA</button>
-    <button class="brand-btn" onclick="showBrand('bernard',this)">伯纳德 Bernard</button><button class="brand-btn" onclick="showBrand('yangxiu',this)">扬修 Yangxiu</button>
-    <button class="brand-btn" onclick="showBrand('sipos',this)">西博思 SIPOS</button>
-    <button class="brand-btn" onclick="showBrand('chuanyi',this)">川仪 CQCI</button>
-    <button class="brand-btn" onclick="showBrand('pneumatic',this)">气动定位器 Positioner</button>
+    <button type="button" class="brand-btn active" onclick="showBrand('raga',this)">瑞基 RAGA</button>
+    <button type="button" class="brand-btn" onclick="showBrand('rotork',this)">罗托克 Rotork</button>
+    <button type="button" class="brand-btn" onclick="showBrand('autork',this)">澳托克 Autork</button>
+    <button type="button" class="brand-btn" onclick="showBrand('emg',this)">德瑞摩 DREHMO</button>
+    <button type="button" class="brand-btn" onclick="showBrand('shyi',this)">上仪 SHANGYI</button>
+    <button type="button" class="brand-btn" onclick="showBrand('siemens',this)">西门子 SIEMENS</button>
+    <button type="button" class="brand-btn" onclick="showBrand('auma',this)">欧玛 AUMA</button>
+    <button type="button" class="brand-btn" onclick="showBrand('bernard',this)">伯纳德 Bernard</button><button type="button" class="brand-btn" onclick="showBrand('yangxiu',this)">扬修 Yangxiu</button>
+    <button type="button" class="brand-btn" onclick="showBrand('sipos',this)">西博思 SIPOS</button>
+    <button type="button" class="brand-btn" onclick="showBrand('chuanyi',this)">川仪 CQCI</button>
+    <button type="button" class="brand-btn" onclick="showBrand('pneumatic',this)">气动定位器 Positioner</button>
   </div>
 
   <!-- ==================== 瑞基 RAGA ==================== -->
   <div class="brand-panel active" id="brand-raga">
     <div class="series-tabs">
-      <button class="tab-btn" onclick="showSeries('raga','ra',this)">RA<span class="sub">多回转·开关</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','rqm',this)">RQM<span class="sub">多回转·调节</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','rj',this)">RJ<span class="sub">角行程·开关</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','rl',this)">RL<span class="sub">角行程·开关</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','rlm',this)">RLM<span class="sub">角行程·调节</span></button>
-          <button class="tab-btn active" onclick="showSeries('raga','rq',this)">RQ<span class="sub">部分回转·开关型</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','rjm',this)">RJM<span class="sub">角行程·调节型</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','split-r',this)">分体式R<span class="sub">分体控制型</span></button>
-      <button class="tab-btn" onclick="showSeries('raga','ex-proof',this)">防爆型<span class="sub">防爆型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','ra',this)">RA<span class="sub">多回转·开关</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','rqm',this)">RQM<span class="sub">多回转·调节</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','rj',this)">RJ<span class="sub">角行程·开关</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','rl',this)">RL<span class="sub">角行程·开关</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','rlm',this)">RLM<span class="sub">角行程·调节</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('raga','rq',this)">RQ<span class="sub">部分回转·开关型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','rjm',this)">RJM<span class="sub">角行程·调节型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','split-r',this)">分体式R<span class="sub">分体控制型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('raga','ex-proof',this)">防爆型<span class="sub">防爆型</span></button>
     </div>
     <!-- RA -->
     <div class="series-panel active" id="raga-ra">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-ra','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-ra','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-ra','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-ra','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-ra','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-ra','detail',this)">端子表</button></div>
       <div class="ver-panel" id="raga-ra-simple"><div class="simple-section">
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相接1、2、3；<strong>单相220V只接1、2，3号空着</strong></div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接</h3><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">5</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">34</span><span class="label">公共端</span></div></div></div><div class="term-desc">用导线将<strong>5号和34号</strong>直接连起来</div></div>
@@ -596,7 +596,7 @@
     </div>
     <!-- RQM -->
     <div class="series-panel" id="raga-rqm">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rqm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rqm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rqm','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rqm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rqm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rqm','detail',this)">端子表</button></div>
       <div class="ver-panel" id="raga-rqm-simple"><div class="simple-section">
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相接1、2、3；单相接1、2</div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组！）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">4</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">41</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">5</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">39</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">第一组<strong>4⇆41</strong>，第二组<strong>5⇆39</strong>，两组都必须短接</div></div>
@@ -636,7 +636,7 @@
     </div>
     <!-- RJ -->
     <div class="series-panel" id="raga-rj">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rj','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rj','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rj','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rj','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rj','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rj','detail',this)">端子表</button></div>
       <div class="ver-panel" id="raga-rj-simple"><div class="simple-section">
         <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子编号公开权威来源有限，<strong>以执行器铭牌接线图号为准</strong>。</div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">Ⅰ</span><span class="label">火线L</span></div><div class="term-box power"><span class="num">Ⅱ</span><span class="label">零线N</span></div><div class="term-box power" style="opacity:0.4"><span class="num">Ⅲ</span><span class="label">空着</span></div><div class="term-desc">单相220V接<strong>Ⅰ、Ⅱ</strong>（罗马数字），Ⅲ号空着</div></div></div>
@@ -677,7 +677,7 @@
     </div>
     <!-- RL -->
     <div class="series-panel" id="raga-rl">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rl','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rl','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rl','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rl','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rl','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rl','detail',this)">端子表</button></div>
       <div class="ver-panel" id="raga-rl-simple"><div class="simple-section">
         <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子编号公开权威来源有限，<strong>以执行器铭牌接线图号为准</strong>。</div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">U/L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">V/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">W/L3</span></div><div class="term-desc">三相接1、2、3；单相接1(L)、2(N)，3号空。E=接地</div></div></div>
@@ -718,7 +718,7 @@
     </div>
     <!-- RLM -->
     <div class="series-panel" id="raga-rlm">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rlm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rlm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rlm','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rlm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rlm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rlm','detail',this)">端子表</button></div>
       <div class="ver-panel" id="raga-rlm-simple"><div class="simple-section">
         <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子编号公开权威来源有限，<strong>以执行器铭牌接线图号为准</strong>。</div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">U/L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">V/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">W/L3</span></div><div class="term-desc">同RL系列</div></div></div>
@@ -756,7 +756,7 @@
     </div>
   
     <div class="series-panel" id="raga-rq">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rq','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rq','detail',this)">端子表</button></div>
 <div class="ver-panel" id="raga-rq-simple"><div class="simple-section">
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">U/L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">V/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">W/L3</span></div><div class="term-desc">三相接1、2、3；单相接1(L)、2(N)，3号空。E=接地</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">4</span><span class="label">24V-</span></div><div class="term-box short"><span class="num">36</span><span class="label">远程低公共</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">5</span><span class="label">24V+</span></div><div class="term-box short"><span class="num">34</span><span class="label">保持/停止</span></div></div></div></div><div class="term-desc"><strong>4⇆36</strong>出厂已短接（使用内部24VDC时）；<strong>5⇆34</strong>保持式控制必须短接</div></div>
@@ -795,7 +795,7 @@
 <!-- 系列ID: raga-rj -->
 </div>
     <div class="series-panel" id="raga-rjm">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-rjm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-rjm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-rjm','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-rjm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-rjm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-rjm','detail',this)">端子表</button></div>
 <div class="ver-panel" id="raga-rjm-simple"><div class="simple-section">
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">U/L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">V/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">W/L3</span></div><div class="term-desc">RJM为RQM多回转调节型配角行程输出，端子与RQM一致。三相接1、2、3；单相接1、2</div></div></div>
 <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组！）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">4</span><span class="label">24V-</span></div><div class="term-box short"><span class="num">41</span><span class="label">手/自动低公共</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">5</span><span class="label">24V+</span></div><div class="term-box short"><span class="num">39</span><span class="label">模拟地</span></div></div></div></div><div class="term-desc">第一组<strong>4⇆41</strong>（手/自动切换），第二组<strong>5⇆39</strong>（模拟地），两组都必须短接</div></div>
@@ -833,7 +833,7 @@
 <!-- 系列ID: raga-rl -->
 </div>
     <div class="series-panel" id="raga-split-r">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-split-r','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-split-r','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-split-r','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-split-r','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-split-r','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-split-r','detail',this)">端子表</button></div>
 <div class="ver-panel" id="raga-split-r-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>分体式特点</h3><div class="term-desc">R系列分体式，<strong>电气控制盒与机械本体分离安装</strong>，最远距离30米，出厂配5米电缆。共3个接线盘：#1机械部分、#2电气左侧（连机械）、#3电气右侧（外接控制）。以下为<strong>#3外接控制盘</strong>端子，端子定义同RA系列。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3；单相220V接1、2，3号空</div></div></div>
@@ -871,7 +871,7 @@
 <!-- 系列ID: raga-ex-proof -->
 </div>
     <div class="series-panel" id="raga-ex-proof">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('raga-ex-proof','debug',this)">调试</button><button class="ver-btn" onclick="showVer('raga-ex-proof','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('raga-ex-proof','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('raga-ex-proof','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('raga-ex-proof','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('raga-ex-proof','detail',this)">端子表</button></div>
 <div class="ver-panel" id="raga-ex-proof-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">爆</span>防爆型说明</h3><div class="term-desc">瑞基防爆型，防爆标志<strong>ExdⅡBT4/CT4</strong>。危险区域<strong>无需打开电气箱盖</strong>即可通过红外设定器进行参数设定、故障诊断。进线孔为专用防爆螺纹管（两个M20×1.5）。端子定义与对应普通型完全一致（RA/RQM/RL等），<strong>Exd隔爆型控制信号为非本安回路，直接接入即可，不需要安全栅；如选配本安型(Exi)控制模块，则本安信号必须经安全栅接入。</strong></div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相接1、2、3；单相220V只接1、2，3号空着</div></div></div>
@@ -905,28 +905,24 @@
 </div></div>
 
 <!-- 系列ID: autork-atkq -->
-
-<!-- 系列ID: autork-atkq -->
-
-<!-- 系列ID: autork-atkq -->
 </div>
   </div>
 
   <!-- ==================== 罗托克 Rotork ==================== -->
   <div class="brand-panel" id="brand-rotork">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('rotork','iq',this)">IQ<span class="sub">多回转·智能型</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iqt',this)">IQT<span class="sub">部分回转·智能型</span></button>
-          <button class="tab-btn" onclick="showSeries('rotork','iqm',this)">IQM<span class="sub">多回转·调节型</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iqs',this)">IQS/IQD<span class="sub">分体式/远控型</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iqh',this)">IQH/IQTF<span class="sub">高扭矩/快速型</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iw',this)">IW/IS<span class="sub">配齿轮箱·大扭矩</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iql',this)">IQL/IQML<span class="sub">直行程</span></button>
-      <button class="tab-btn" onclick="showSeries('rotork','iq70',this)">IQ70/90<span class="sub">第三代IQ·老型号</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('rotork','iq',this)">IQ<span class="sub">多回转·智能型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iqt',this)">IQT<span class="sub">部分回转·智能型</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('rotork','iqm',this)">IQM<span class="sub">多回转·调节型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iqs',this)">IQS/IQD<span class="sub">分体式/远控型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iqh',this)">IQH/IQTF<span class="sub">高扭矩/快速型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iw',this)">IW/IS<span class="sub">配齿轮箱·大扭矩</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iql',this)">IQL/IQML<span class="sub">直行程</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('rotork','iq70',this)">IQ70/90<span class="sub">第三代IQ·老型号</span></button>
     </div>
     <!-- IQ -->
     <div class="series-panel active" id="rotork-iq">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iq','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iq','detail',this)">端子表</button></div>
       <div class="ver-panel" id="rotork-iq-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>罗托克IQ特点</h3><div class="term-desc">IQ系列采用<strong>非侵入式</strong>设计，用红外设定器调试，无需开盖。<strong>端子功能可软件配置</strong>，S1-S4标配、S5-S12选配，每个触点可定义为开到位/关到位/故障/远程等，常开常闭可设。以下为<strong>出厂默认配置</strong>。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">U</span></div><div class="term-box power"><span class="num">L2</span><span class="label">V</span></div><div class="term-box power"><span class="num">L3</span><span class="label">W</span></div><div class="term-desc">三相380V或单相220V，按铭牌接线。<strong>自动相位校正</strong>：三相电机不管相序怎么接，开闭方向不变</div></div></div>
@@ -972,7 +968,7 @@
     </div>
     <!-- IQT -->
     <div class="series-panel" id="rotork-iqt">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iqt','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iqt','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iqt','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iqt','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqt','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqt','detail',this)">端子表</button></div>
       <div class="ver-panel" id="rotork-iqt-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>IQT与IQ的区别</h3><div class="term-desc">IQT是<strong>部分回转（角行程）</strong>智能型，用于蝶阀、球阀等90°回转阀门。<strong>接线端子、调试方法与IQ系列完全相同</strong>，只是机械结构和行程范围不同（0-90°）。请参考上方IQ系列的接线和调试。</div></div>
         <div class="warn-text" style="margin-top:8px">⚠️ IQT的S3/S4出厂默认功能同IQ：<strong>S3=关到位断开、S4=开到位断开（均可组态）</strong>，故障监视由独立Monitor Relay承担，非S3。端子编号以随附电路图为准。</div>
@@ -1001,7 +997,7 @@
     </div>
   
     <div class="series-panel" id="rotork-iqm">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iqm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iqm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iqm','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iqm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqm','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iqm-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IQM调节型特点</h3><div class="term-desc">IQM为<strong>调节型（Modulating）</strong>多回转执行器，S4/S5间歇工作制，最大1200次/小时启动。内置比例控制器（Folomatic），接收<strong>4-20mA</strong>信号自动定位。端子与IQ开关型基本一致，增加模拟量输入/反馈端子。型号如IQM10、IQM20、IQM25等。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">三相380V AC 50/60Hz，自动相位校正，无相序要求</div></div></div>
@@ -1050,7 +1046,7 @@
 
 <!-- ========== IQS/IQD 分体式/远控型 ========== -->
     <div class="series-panel" id="rotork-iqs">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iqs','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iqs','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iqs','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iqs','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqs','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqs','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iqs-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IQS/IQD分体式特点</h3><div class="term-desc"><strong>IQS（分体式）</strong>控制盒与执行器本体分离安装，适用于高温、振动、空间受限或需集中控制的场合。<strong>IQD（远控型）</strong>支持远程控制单元，通过电缆连接本体与控制盘。控制端子与IQ完全相同，仅安装方式不同。IQS也指单相电源型，IQD也指直流电源型。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">三相380V（IQS三相型）/单相220V（IQS单相：1=L,2=N）/直流24V或110V（IQD：1=+,2=-）</div></div></div>
@@ -1096,7 +1092,7 @@
 
 <!-- ========== IQH/IQTF 高扭矩/快速型 ========== -->
     <div class="series-panel" id="rotork-iqh">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iqh','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iqh','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iqh','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iqh','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqh','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iqh','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iqh-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IQH/IQTF特殊工况特点</h3><div class="term-desc"><strong>IQH（高温型）</strong>适用于环境温度高达+80°C的场合（标准IQ为+70°C），内部增加耐高温元件和散热设计，如蒸汽管道旁、热带户外。<strong>IQTF（快速型）</strong>为IQT的快速动作版本，缩短90°动作时间，适用于紧急切断阀等需快速关断的场合。<strong>电气接线、端子排与标准IQ/IQT完全一致</strong>。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">三相380V AC，自动相位校正。IQH高温型注意电源降额</div></div></div>
@@ -1142,7 +1138,7 @@
 
 <!-- ========== IW/IS 配齿轮箱·大扭矩 ========== -->
     <div class="series-panel" id="rotork-iw">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iw','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iw','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iw','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iw','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iw','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iw','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iw-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IW/IS齿轮箱组合特点</h3><div class="term-desc"><strong>IW系列</strong>为部分回转（角行程90°）齿轮箱，与IQ/IQT组合增大输出力矩，型号IW3-IW12，输出力矩可达数万Nm，适用于大口径蝶阀、球阀。<strong>IS系列</strong>为多回转齿轮箱（增速/减速），与IQ组合增大输出圈数或推力。<strong>齿轮箱本身无电气部件</strong>，所有接线和调试在配套的IQ/IQT执行器上完成，端子表与IQ完全相同。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（执行器侧）</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">电源接在执行器侧，齿轮箱无电气接线。组合型号如IQ20+IW5</div></div></div>
@@ -1188,7 +1184,7 @@
 
 <!-- ========== IQL/IQML 直行程 ========== -->
     <div class="series-panel" id="rotork-iql">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iql','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iql','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iql','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iql','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iql','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iql','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iql-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IQL/IQML线性直推特点</h3><div class="term-desc"><strong>IQL（开关型）/ IQML（调节型）</strong>为线性直推输出执行器，在IQ/IQM基础上加装<strong>丝杠组件（Linear Drive Unit）</strong>，将旋转输出转为直线推力。行程范围8mm-110mm，推力可达数十kN。适用于直行程调节阀、闸阀（推力型）。<strong>电气接线和调试与IQ/IQM完全相同</strong>，机械部分需调整线性行程。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">三相380V AC，自动相位校正。电源接在执行器主体侧</div></div></div>
@@ -1236,7 +1232,7 @@
 
 <!-- ========== IQ70/90 第三代IQ·老型号 ========== -->
     <div class="series-panel" id="rotork-iq70">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('rotork-iq70','debug',this)">调试</button><button class="ver-btn" onclick="showVer('rotork-iq70','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('rotork-iq70','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('rotork-iq70','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('rotork-iq70','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('rotork-iq70','detail',this)">端子表</button></div>
   <div class="ver-panel" id="rotork-iq70-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>IQ70/90老型号特点</h3><div class="term-desc"><strong>IQ70、IQ90、IQ91、IQ95、IQ98</strong>为第三代IQ系列中按<strong>力矩等级划分的大力矩型号</strong>（老型号称谓），数字越大输出力矩越大：IQ70(2000Nm)、IQ90(3000Nm)、IQ91(3500Nm)、IQ95(4500Nm)、IQ98(6000Nm)。使用与IQ相同的控制板和端子排，<strong>端子布局略有不同</strong>（老款端子排编号方式），设定方法基本一致但菜单为图标式导航（非文本显示）。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">地</span></div><div class="term-desc">三相380V AC。大力矩型号电机功率大，IQ90以上建议电源线径6mm²以上</div></div></div>
@@ -1285,16 +1281,16 @@
   <!-- ==================== 澳托克 Autork ==================== -->
   <div class="brand-panel" id="brand-autork">
     <div class="series-tabs">
-      <button class="tab-btn" onclick="showSeries('autork','atkq',this)">ATKQ<span class="sub">部分回转·整体型</span></button>
-      <button class="tab-btn" onclick="showSeries('autork','ikm',this)">IKM<span class="sub">调节型</span></button>
-          <button class="tab-btn active" onclick="showSeries('autork','ik',this)">IK<span class="sub">智能开关型</span></button>
-      <button class="tab-btn" onclick="showSeries('autork','ikt',this)">IKT<span class="sub">智能调节型</span></button>
-      <button class="tab-btn" onclick="showSeries('autork','atk-aq',this)">ATK-AQ<span class="sub">部分回转型</span></button>
-      <button class="tab-btn" onclick="showSeries('autork','autork-ex',this)">防爆型<span class="sub">防爆型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('autork','atkq',this)">ATKQ<span class="sub">部分回转·整体型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('autork','ikm',this)">IKM<span class="sub">调节型</span></button>
+          <button type="button" class="tab-btn active" onclick="showSeries('autork','ik',this)">IK<span class="sub">智能开关型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('autork','ikt',this)">IKT<span class="sub">智能调节型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('autork','atk-aq',this)">ATK-AQ<span class="sub">部分回转型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('autork','autork-ex',this)">防爆型<span class="sub">防爆型</span></button>
     </div>
     <!-- ATKQ -->
     <div class="series-panel active" id="autork-atkq">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-atkq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-atkq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-atkq','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-atkq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-atkq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-atkq','detail',this)">端子表</button></div>
       <div class="ver-panel" id="autork-atkq-simple"><div class="simple-section">
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3；单相220V接1、2</div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>整体型开关量短接</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">4</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">36</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">5</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">34</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">开关型整体型：<strong>4⇆36</strong>和<strong>5⇆34</strong>两组短接（有停止指令时5⇆34）</div></div>
@@ -1335,7 +1331,7 @@
     </div>
     <!-- IKM 调节型 -->
     <div class="series-panel" id="autork-ikm">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-ikm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-ikm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-ikm','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-ikm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-ikm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-ikm','detail',this)">端子表</button></div>
       <div class="ver-panel" id="autork-ikm-simple"><div class="simple-section">
         <div class="warn-text" style="margin-bottom:8px">⚠️ 此端子定义适用于旧版ATK/IK系列（约2011-2020年产品，4-36/5-34短接体系）。<strong>新版IK/IKM</strong>（chinaatk.com官网当前销售版本）已改用全新端子编号（22关/23开/24保持、27/28模拟输入、29/30反馈），<strong>以铭牌接线图号为准</strong>。</div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相/单相，同ATKQ</div></div></div>
@@ -1375,7 +1371,7 @@
     </div>
   
     <div class="series-panel" id="autork-ik">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-ik','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-ik','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-ik','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-ik','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-ik','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-ik','detail',this)">端子表</button></div>
 <div class="ver-panel" id="autork-ik-simple"><div class="simple-section">
 <div class="warn-text" style="margin-bottom:8px">⚠️ 此端子定义适用于旧版ATK/IK系列（约2011-2020年产品，4-36/5-34短接体系）。<strong>新版IK/IKM</strong>（chinaatk.com官网当前销售版本）已改用全新端子编号（22关/23开/24保持、27/28模拟输入、29/30反馈），<strong>以铭牌接线图号为准</strong>。</div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3；单相220V接1、2。部分型号(10/12/18/20/25/35)标为U1/V1/W1</div></div></div>
@@ -1417,7 +1413,7 @@
 <!-- 系列ID: autork-ikt -->
 </div>
     <div class="series-panel" id="autork-ikt">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-ikt','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-ikt','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-ikt','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-ikt','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-ikt','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-ikt','detail',this)">端子表</button></div>
 <div class="ver-panel" id="autork-ikt-simple"><div class="simple-section">
 <div class="warn-text" style="margin-bottom:8px">⚠️ 此端子定义适用于旧版ATK/IK系列（约2011-2020年产品，4-36/5-34短接体系）。<strong>新版IK/IKM</strong>（chinaatk.com官网当前销售版本）已改用全新端子编号（22关/23开/24保持、27/28模拟输入、29/30反馈），<strong>以铭牌接线图号为准</strong>。</div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相/单相，同IK。部分型号标U1/V1/W1</div></div></div>
@@ -1457,7 +1453,7 @@
 <!-- 系列ID: autork-atk-aq -->
 </div>
     <div class="series-panel" id="autork-atk-aq">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-atk-aq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-atk-aq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-atk-aq','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-atk-aq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-atk-aq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-atk-aq','detail',this)">端子表</button></div>
 <div class="ver-panel" id="autork-atk-aq-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>ATK-AQ特点</h3><div class="term-desc">ATK型/AQ型部分回转阀门电动装置，<strong>AQ为角行程</strong>。整体型（内置接触器/热继电器/变压器），有常规户外型和隔爆型（dI/dⅡBT4）。<strong>端子定义同ATKQ系列</strong>。关位/开位旋钮标定，机械凸轮调力矩。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3；单相220V接1、2</div></div></div>
@@ -1497,7 +1493,7 @@
 <!-- 系列ID: autork-autork-ex -->
 </div>
     <div class="series-panel" id="autork-autork-ex">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('autork-autork-ex','debug',this)">调试</button><button class="ver-btn" onclick="showVer('autork-autork-ex','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('autork-autork-ex','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('autork-autork-ex','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('autork-autork-ex','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('autork-autork-ex','detail',this)">端子表</button></div>
 <div class="ver-panel" id="autork-autork-ex-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">爆</span>澳托克防爆型</h3><div class="term-desc">IK/IKM/IKT/ATKQ等系列均有隔爆型产品。防爆标志：<strong>dⅡBT4</strong>（工厂ⅡA/ⅡB级T1-T4组）、<strong>dⅡCT4</strong>（更高等级）、<strong>dI</strong>（煤矿非采掘面）。遥控器本安型<strong>ibⅡBT4</strong>。端子定义与对应普通型一致（ATKQ/IKM）。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3；单相220V接1、2。防爆格兰头进线</div></div></div>
@@ -1539,17 +1535,17 @@
   <!-- ==================== EMG ==================== -->
   <div class="brand-panel" id="brand-emg">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('emg','dmc',this)">DMC<span class="sub">多回转·开关型</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','dim',this)">DiM<span class="sub">多回转·调节型</span></button>
-          <button class="tab-btn" onclick="showSeries('emg','dmcplus',this)">DMCplus<span class="sub">升级版智能型</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','dim-g',this)">DIM-G/DIM-A<span class="sub">调节型/模拟量型</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','evm',this)">EVM/EVK<span class="sub">控制放大器/定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','eb',this)">EB电液型<span class="sub">电液执行器</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','ed',this)">ED<span class="sub">老型号电动</span></button>
-      <button class="tab-btn" onclick="showSeries('emg','dr',this)">DR/DA<span class="sub">转角型/直行程</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('emg','dmc',this)">DMC<span class="sub">多回转·开关型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','dim',this)">DiM<span class="sub">多回转·调节型</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('emg','dmcplus',this)">DMCplus<span class="sub">升级版智能型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','dim-g',this)">DIM-G/DIM-A<span class="sub">调节型/模拟量型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','evm',this)">EVM/EVK<span class="sub">控制放大器/定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','eb',this)">EB电液型<span class="sub">电液执行器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','ed',this)">ED<span class="sub">老型号电动</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('emg','dr',this)">DR/DA<span class="sub">转角型/直行程</span></button>
     </div>
     <div class="series-panel active" id="emg-dmc">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-dmc','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-dmc','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-dmc','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-dmc','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-dmc','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-dmc','detail',this)">端子表</button></div>
       <div class="ver-panel" id="emg-dmc-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>EMG特点</h3><div class="term-desc">德国EMG（DREHMO），<strong>DMC系列（DMC 30-2000多回转 / DPMC角行程）</strong>开关型、DiM调节型。<strong>拨码开关+Learn按键</strong>调试，无需设定器。小端子排接电源，长端子排接信号。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">三相380V接小端子排<strong>4、5、6</strong>（U、V、W），接地线接端子排旁</div></div></div>
@@ -1587,7 +1583,7 @@
 <!-- 系列ID: emg-dim -->
     </div>
     <div class="series-panel" id="emg-dim">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-dim','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-dim','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-dim','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-dim','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-dim','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-dim','detail',this)">端子表</button></div>
       <div class="ver-panel" id="emg-dim-simple"><div class="simple-section">
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">同DMC，小端子排4、5、6接三相380V</div></div></div>
         <div class="simple-block block-short"><h3><span class="icon">短</span>必须短接（两组）</h3><div class="short-row-flex"><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">1</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">21</span><span class="label">公共端</span></div></div></div><div class="short-demo"><div class="short-u"></div><div class="short-boxes"><div class="term-box short"><span class="num">2</span><span class="label">公共端</span></div><div class="term-box short"><span class="num">20</span><span class="label">公共端</span></div></div></div></div><div class="term-desc">调节型：<strong>1⇆21</strong>和<strong>2⇆20</strong>两组短接</div></div>
@@ -1625,7 +1621,7 @@
     </div>
   
     <div class="series-panel" id="emg-dmcplus">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-dmcplus','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-dmcplus','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-dmcplus','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-dmcplus','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-dmcplus','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-dmcplus','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-dmcplus-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>DMCplus特点</h3><div class="term-desc">DMC 002的<strong>升级版智能型</strong>，端子定义与DMC 002基本一致，增加LCD智能显示、运行数据记录、故障代码诊断，可选Profibus/Modbus总线及ESD紧急关断。更大功率范围，固态继电器(ELR)控制。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">三相380V接小端子排<strong>4、5、6</strong>（U、V、W），接地线接端子排旁</div></div></div>
@@ -1668,7 +1664,7 @@
 
 <!-- ==================== DIM-G / DIM-A ==================== -->
     <div class="series-panel" id="emg-dim-g">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-dim-g','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-dim-g','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-dim-g','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-dim-g','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-dim-g','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-dim-g','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-dim-g-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>DIM-G/DIM-A特点</h3><div class="term-desc"><strong>4-20mA调节型/模拟量型</strong>。DIM-G=DiM调节型配齿轮箱组合（G=Gearbox），DIM-A=特殊安装形式（A=特殊安装）。电气部分与DiM系列完全相同，LCD智能显示，接收4-20mA指令自动定位，输出4-20mA阀位反馈。DIM-G具体型号以执行器铭牌为准。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">同DiM，小端子排4、5、6接三相380V</div></div></div>
@@ -1707,7 +1703,7 @@
 
 <!-- ==================== EVM / EVK ==================== -->
     <div class="series-panel" id="emg-evm">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-evm','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-evm','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-evm','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-evm','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-evm','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-evm','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-evm-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>EVM/EVK特点</h3><div class="term-desc">EMG<strong>控制放大器/定位器</strong>，独立安装单元（壁挂/DIN导轨），与执行器分离安装。<strong>EVM</strong>=开关型定位器（接收开关量指令输出继电器控制执行器），<strong>EVK</strong>=调节型定位器（接收4-20mA输出模拟量/继电器控制）。内置PID运算，可独立完成阀门定位，无需DCS直接驱动执行器。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>工作电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L+</span></div><div class="term-box power"><span class="num">2</span><span class="label">N-</span></div><div class="term-desc">独立供电：AC 220V（1=L,2=N）或DC 24V（1=+,2=-），按铭牌确认。PE接地端子单独接地</div></div></div>
@@ -1746,7 +1742,7 @@
 
 <!-- ==================== EB 电液型 ==================== -->
     <div class="series-panel" id="emg-eb">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-eb','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-eb','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-eb','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-eb','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-eb','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-eb','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-eb-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>EB电液型特点</h3><div class="term-desc">EMG<strong>电液联动执行器</strong>，电机驱动液压泵，通过液压油驱动活塞输出推力/力矩。型号如EB2000-60。<strong>端子含电机三相+电磁阀控制</strong>：X2端子排接电机电源，X1端子排接控制信号（同DMC标准）。液压系统提供更大输出力，适用于大口径/高推力阀门。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>电机电源 + 电磁阀</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-box power"><span class="num">YV1</span><span class="label">开阀</span></div><div class="term-box power"><span class="num">YV2</span><span class="label">关阀</span></div><div class="term-desc">X2端子排：U/V/W接三相380V电机电源；YV1/YV2接电磁阀线圈（开阀/关阀电磁阀，DC 24V或AC 220V按铭牌）</div></div></div>
@@ -1786,7 +1782,7 @@
 
 <!-- ==================== ED 老型号电动 ==================== -->
     <div class="series-panel" id="emg-ed">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-ed','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-ed','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-ed','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-ed','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-ed','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-ed','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-ed-simple"><div class="simple-section">
 <div class="warn-text" style="margin-bottom:8px">⚠️ ED为已停产老型号（机电式控制），公开在线文档有限，<strong>端子定义以随机说明书和铭牌接线图为准</strong>。</div>
 <div class="simple-block block-note"><h3><span class="icon">说</span>ED老型号特点</h3><div class="term-desc">EMG<strong>老款电动执行器</strong>，电机直驱丝杠输出直线运动（电动直推型），结构简单可靠。采用<strong>机械凸轮限位开关</strong>和<strong>力矩开关</strong>，无智能控制板，所有设定通过机械调整完成。基本端子：动力电源、开关控制、限位反馈、力矩保护。适用于老厂改造和简单开关工况。</div></div>
@@ -1825,7 +1821,7 @@
 
 <!-- ==================== DR / DA ==================== -->
     <div class="series-panel" id="emg-dr">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('emg-dr','debug',this)">调试</button><button class="ver-btn" onclick="showVer('emg-dr','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('emg-dr','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('emg-dr','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('emg-dr','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('emg-dr','detail',this)">端子表</button></div>
 <div class="ver-panel" id="emg-dr-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>DR/DA特点</h3><div class="term-desc"><strong>DR</strong>=转角型（部分回转90°）开关型执行器，适用于蝶阀、球阀等90°转角阀门；<strong>DA</strong>=直行程调节型执行器，适用于直行程调节阀。<strong>端子定义与DMC/DiM完全相同</strong>，区别仅在机械输出形式（90°转角/直线推力）。DR电气同DMC开关型，DA电气同DiM调节型。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">4</span><span class="label">U</span></div><div class="term-box power"><span class="num">5</span><span class="label">V</span></div><div class="term-box power"><span class="num">6</span><span class="label">W</span></div><div class="term-desc">同DMC，小端子排4、5、6接三相380V（U、V、W）。DR为90°转角输出，DA为直线推力输出，电气部分一致</div></div></div>
@@ -1862,17 +1858,17 @@
   <!-- ==================== 上仪 ==================== -->
   <div class="brand-panel" id="brand-shyi">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('shyi','a',this)">A系列<span class="sub">30AI·多回转</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','m',this)">M系列<span class="sub">调节型</span></button>
-          <button class="tab-btn" onclick="showSeries('shyi','ai-mi',this)">AI/MI<span class="sub">智能一体化</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','dkj',this)">DKJ/ZKJ<span class="sub">角行程·经典</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','dkz',this)">DKZ<span class="sub">直行程</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','361l',this)">361L/341L<span class="sub">电子式·直行程</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','381l',this)">381L<span class="sub">电子式·角行程</span></button>
-      <button class="tab-btn" onclick="showSeries('shyi','zaj',this)">ZAJ<span class="sub">角行程调节阀</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('shyi','a',this)">A系列<span class="sub">30AI·多回转</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','m',this)">M系列<span class="sub">调节型</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('shyi','ai-mi',this)">AI/MI<span class="sub">智能一体化</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','dkj',this)">DKJ/ZKJ<span class="sub">角行程·经典</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','dkz',this)">DKZ<span class="sub">直行程</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','361l',this)">361L/341L<span class="sub">电子式·直行程</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','381l',this)">381L<span class="sub">电子式·角行程</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('shyi','zaj',this)">ZAJ<span class="sub">角行程调节阀</span></button>
     </div>
     <div class="series-panel active" id="shyi-a">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-a','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-a','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-a','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-a','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-a','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-a','detail',this)">端子表</button></div>
       <div class="ver-panel" id="shyi-a-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>上仪A系列特点</h3><div class="term-desc">上海自动化仪表（上仪）A系列（30AI等），引进英国ROTORK技术。Syncropak 1600型带本机/停/远程选择开关，<strong>自动相位校正</strong>（三相不管相序怎么接方向不变）。机械凸轮式行程/力矩设定。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V接1、2、3，单相220V可选。<strong>自动相位校正</strong>，不用考虑相序</div></div></div>
@@ -1962,7 +1958,7 @@
 <!-- 系列ID: m -->
     </div>
     <div class="series-panel" id="shyi-m">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-m','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-m','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-m','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-m','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-m','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-m','detail',this)">端子表</button></div>
       <div class="ver-panel" id="shyi-m-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>上仪M系列</h3><div class="term-desc">M系列适用于<strong>连续频繁调节</strong>，调节频率可达每小时1200次。配比例控制器（伺服放大器），接受4-20mA/0-10mA/1-5V标准信号。<strong>接线和调试与A系列类似</strong>，增加比例控制模块。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V</div></div></div>
@@ -2044,7 +2040,7 @@
     </div>
   
     <div class="series-panel" id="shyi-ai-mi">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-ai-mi','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-ai-mi','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-ai-mi','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-ai-mi','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-ai-mi','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-ai-mi','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-ai-mi-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>AI/MI智能一体化特点</h3><div class="term-desc">AI（角行程）、MI（多回转）智能一体化电动执行机构，在A/M系列基础上采用超大规模集成电路研制。支持<strong>4-20mA模拟量控制、开关量控制、现场总线（Profibus/Modbus/HART/FF）</strong>。模拟控制适用于系统变化速度较低（最大启动频率60次/小时）的场合。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">U</span></div><div class="term-box power"><span class="num">L2</span><span class="label">V/N</span></div><div class="term-box power"><span class="num">L3</span><span class="label">W</span></div><div class="term-desc">三相380V接L1/L2/L3；单相220V接L/N</div></div></div>
@@ -2143,7 +2139,7 @@
 
 <!-- DKJ/ZKJ 角行程经典型号 -->
     <div class="series-panel" id="shyi-dkj">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-dkj','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-dkj','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-dkj','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-dkj','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-dkj','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-dkj','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-dkj-simple"><div class="simple-section">
     <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子号因生产厂家（上仪十一厂/天津/四川等）和接线图号不同而异，<strong>以执行器接线腔内实际接线图为准</strong>。</div>
     <div class="simple-block block-note"><h3><span class="icon">说</span>DKJ/ZKJ角行程特点</h3><div class="term-desc">DKJ（或ZKJ）-XM型角行程电动执行机构，带行程限位。以交流电源为动力，<strong>配合伺服放大器使用</strong>，接受4-20mA（或0-10mA）标准信号，转变成对应转角位移操纵风门挡板、蝶阀、球阀等。</div></div>
@@ -2244,7 +2240,7 @@
 
 <!-- DKZ 直行程 -->
     <div class="series-panel" id="shyi-dkz">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-dkz','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-dkz','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-dkz','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-dkz','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-dkz','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-dkz','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-dkz-simple"><div class="simple-section">
     <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子号因生产厂家（上仪十一厂/天津/四川等）和接线图号不同而异，<strong>以执行器接线腔内实际接线图为准</strong>。</div>
     <div class="simple-block block-note"><h3><span class="icon">说</span>DKZ直行程特点</h3><div class="term-desc">DKZ系列直行程电动执行机构，直行程输出推力，配调节阀使用。DKZ-610(H)输出推力25000N，行程60/100mm，全行程时间40/60秒。<strong>接线方式与DKJ类似，配合伺服放大器使用</strong>，接受4-20mA标准信号。</div></div>
@@ -2341,7 +2337,7 @@
 
 <!-- 361L/341L 电子式直行程 -->
     <div class="series-panel" id="shyi-361l">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-361l','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-361l','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-361l','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-361l','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-361l','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-361l','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-361l-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>361L/341L电子式特点</h3><div class="term-desc">3610L调节型、3410L开关型（由3610L派生）直行程电子式电动执行机构。以<strong>AC220V为驱动电源</strong>，接受DC0-10mA(DC0-5V)或DC4-20mA(DC1-5V)控制信号。另有361FQ温度调节执行器。引出线有正、负；零、相之分。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L</span><span class="label">相线</span></div><div class="term-box power"><span class="num">N</span><span class="label">零线</span></div><div class="term-desc">单相AC220V，<strong>零、相之分，不能接反</strong></div></div></div>
@@ -2438,7 +2434,7 @@
 
 <!-- 381L 电子式角行程 -->
     <div class="series-panel" id="shyi-381l">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-381l','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-381l','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-381l','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-381l','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-381l','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-381l','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-381l-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>381系列电子式角行程特点</h3><div class="term-desc">381型（381R角行程/381L直行程）电子式电动执行器，<strong>单相AC220V电源</strong>。控制器上设6只状态开关：①②正反动作，③④⑤断信号动作，⑥输入信号状态。松开护罩螺栓拆卸护罩，外部配线按控制器侧面接线示意图连接。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L</span><span class="label">相线</span></div><div class="term-box power"><span class="num">N</span><span class="label">零线</span></div><div class="term-desc">单相AC220V，L/N接线</div></div></div>
@@ -2557,7 +2553,7 @@
 
 <!-- ZAJ 角行程电动调节阀 -->
     <div class="series-panel" id="shyi-zaj">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('shyi-zaj','debug',this)">调试</button><button class="ver-btn" onclick="showVer('shyi-zaj','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('shyi-zaj','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('shyi-zaj','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('shyi-zaj','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('shyi-zaj','detail',this)">端子表</button></div>
   <div class="ver-panel" id="shyi-zaj-simple"><div class="simple-section">
     <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列端子号因生产厂家（上仪十一厂/天津/四川等）和接线图号不同而异，<strong>以执行器接线腔内实际接线图为准</strong>。</div>
     <div class="simple-block block-note"><h3><span class="icon">说</span>ZAJ角行程特点</h3><div class="term-desc">ZAJ系列角行程电动执行机构，与DKJ类似，用于风门挡板、蝶阀、球阀等角行程调节机构。<strong>配合伺服放大器接受标准信号控制</strong>。接线方式与DKJ系列基本一致。</div></div>
@@ -2659,16 +2655,16 @@
   <!-- ==================== 西门子 Siemens ==================== -->
   <div class="brand-panel" id="brand-siemens">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('siemens','2sa3',this)">2SA3<span class="sub">多回转·开关型</span></button>
-      <button class="tab-btn" onclick="showSeries('siemens','2sa30',this)">2SA30<span class="sub">多回转·智能型</span></button>
-          <button class="tab-btn" onclick="showSeries('siemens','2sa5',this)">2SA5 SIPOS 5<span class="sub">智能变频型</span></button>
-      <button class="tab-btn" onclick="showSeries('siemens','2sa7',this)">2SA7<span class="sub">SIPOS 7经济型</span></button>
-      <button class="tab-btn" onclick="showSeries('siemens','2sa8',this)">2SA8<span class="sub">传统型·非SIPOS7</span></button>
-      <button class="tab-btn" onclick="showSeries('siemens','2sj',this)">2SJ/2SQ<span class="sub">角行程/部分回转</span></button>
-      <button class="tab-btn" onclick="showSeries('siemens','2sa55',this)">2SA55/50<span class="sub">老型号</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('siemens','2sa3',this)">2SA3<span class="sub">多回转·开关型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('siemens','2sa30',this)">2SA30<span class="sub">多回转·智能型</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('siemens','2sa5',this)">2SA5 SIPOS 5<span class="sub">智能变频型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('siemens','2sa7',this)">2SA7<span class="sub">SIPOS 7经济型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('siemens','2sa8',this)">2SA8<span class="sub">传统型·非SIPOS7</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('siemens','2sj',this)">2SJ/2SQ<span class="sub">角行程/部分回转</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('siemens','2sa55',this)">2SA55/50<span class="sub">老型号</span></button>
     </div>
     <div class="series-panel active" id="siemens-2sa3">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa3','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa3','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa3','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa3','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa3','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa3','detail',this)">端子表</button></div>
       <div class="ver-panel" id="siemens-2sa3-simple"><div class="simple-section">
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V接U、V、W，电机S2-15min短时工作制</div></div></div>
         <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令（LK-3模块）</h3><div class="term-row"><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><div class="term-desc">LK-3功率控制器，远方/就地切换，通电默认远方状态</div></div></div>
@@ -2706,7 +2702,7 @@
 <!-- 系列ID: siemens-2sa30 -->
     </div>
     <div class="series-panel" id="siemens-2sa30">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa30','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa30','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa30','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa30','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa30','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa30','detail',this)">端子表</button></div>
       <div class="ver-panel" id="siemens-2sa30-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>2SA30智能型</h3><div class="term-desc">2SA30是西门子<strong>非侵入式智能型</strong>，红外设定器调试，无需开盖。电子行程设定，4-20mA输入/反馈，故障自诊断。接线与2SA3类似，增加智能控制模块。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V</div></div></div>
@@ -2735,7 +2731,7 @@
     </div>
   
     <div class="series-panel" id="siemens-2sa5">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa5','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa5','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa5','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa5','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa5','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa5','detail',this)">端子表</button></div>
   <div class="ver-panel" id="siemens-2sa5-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>SIPOS 5 (2SA5) 智能变频</h3><div class="term-desc">西门子SIPOS 5变频智能执行器，分Flash（经济型ECOTRON）和PROFITRON（专业型）。端子排X1电源/X2继电器/X3控制。<strong>ECOTRON开关量需X3.2:18-19短接</strong>，<strong>PROFITRON模拟量需X3.2:15-18短接</strong>。默认专家密码<strong>9044</strong>。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源 X1</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span></div><div class="term-box power"><span class="num">L2</span></div><div class="term-box power"><span class="num">L3</span></div><div class="term-box power"><span class="num">PE</span></div><div class="term-desc">三相380V或单相220V，变频输入无相序要求</div></div></div>
@@ -2783,7 +2779,7 @@
 
 <!-- ==================== 2SA7（SIPOS SEVEN ECOTRON 经济型） ==================== -->
     <div class="series-panel" id="siemens-2sa7">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa7','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa7','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa7','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa7','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa7','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa7','detail',this)">端子表</button></div>
   <div class="ver-panel" id="siemens-2sa7-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>2SA7（SIPOS SEVEN ECOTRON 经济型）</h3><div class="term-desc">西门子SIPOS SEVEN ECOTRON 经济型，圆形LCD大屏+旋转按钮，变频控制。型号如2SA7010/7020/7030（多回转），角行程为2SG7。<strong>点动模式无外部24V时端子6与5短接</strong>，<strong>自保持模式还需端子1与4短接</strong>。默认专家密码<strong>9044</strong>。<strong>信号电缆屏蔽层必须两端接地。</strong></div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V（单相时U2=L/V2=N），变频无相序</div></div></div>
@@ -2834,7 +2830,7 @@
 
 <!-- ==================== 2SA8 传统型（非SIPOS 7系列） ==================== -->
     <div class="series-panel" id="siemens-2sa8">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa8','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa8','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa8','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa8','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa8','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa8','detail',this)">端子表</button></div>
   <div class="ver-panel" id="siemens-2sa8-simple"><div class="simple-section">
     <div class="warn-text" style="margin-bottom:8px">⚠️ 2SA8为2SA3传统型与SIPOS 7之间的过渡型号，公开详细端子图有限，<strong>以随机说明书为准</strong>。</div>
     <div class="simple-block block-note"><h3><span class="icon">说</span>2SA8 传统型（非SIPOS 7系列）</h3><div class="term-desc"><strong>2SA8为西门子传统型电动执行机构（非SIPOS 7系列），具体参数以铭牌和随机说明书为准。</strong>LCD显示+按键菜单，绝对编码器。型号如2SA8010/8020。三相380V，支持开关量和4-20mA模拟量。<strong>默认密码000</strong>（三位初始密码）。</div></div>
@@ -2873,7 +2869,7 @@
 
 <!-- ==================== 2SJ/2SQ 角行程/部分回转 ==================== -->
     <div class="series-panel" id="siemens-2sj">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sj','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sj','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sj','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sj','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sj','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sj','detail',this)">端子表</button></div>
   <div class="ver-panel" id="siemens-2sj-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>2SJ/2SQ 角行程/部分回转</h3><div class="term-desc"><strong>2SJ</strong>为部分回转齿轮箱，与2SA多回转执行器组合转为90度角行程；<strong>2SQ</strong>为一体化角行程执行器（内置齿轮箱）。型号如2SJ3/5/6、2SQ3/5/6。<strong>电气端子同对应2SA型号</strong>（2SQ3同2SA3，2SQ5同SIPOS 5），输出为90度旋转，适用于蝶阀、球阀。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（同2SA3）</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V，依配套2SA执行器型号而定</div></div></div>
@@ -2912,7 +2908,7 @@
 
 <!-- ==================== 2SA55/50 老型号 ==================== -->
     <div class="series-panel" id="siemens-2sa55">
-  <div class="version-tabs"><button class="ver-btn active" onclick="showVer('siemens-2sa55','debug',this)">调试</button><button class="ver-btn" onclick="showVer('siemens-2sa55','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('siemens-2sa55','detail',this)">端子表</button></div>
+  <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('siemens-2sa55','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa55','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('siemens-2sa55','detail',this)">端子表</button></div>
   <div class="ver-panel" id="siemens-2sa55-simple"><div class="simple-section">
     <div class="simple-block block-note"><h3><span class="icon">说</span>2SA55/50 老型号</h3><div class="term-desc">西门子老款多回转执行器，<strong>机械凸轮式</strong>限位和力矩，端子编号1-40。型号如2SA5010/5020/5030（标准转速）、2SA5530（高转速）。属传统机械平台，<strong>无电子菜单</strong>，所有调整通过机械机构完成。端子功能与2SA3传统型类似，编号体系不同。</div></div>
     <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（端子1-4）</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-box power"><span class="num">4</span><span class="label">N/PE</span></div><div class="term-desc">三相380V接1/2/3，注意相序（相序错误方向相反）</div></div></div>
@@ -2959,17 +2955,17 @@
   <!-- ==================== AUMA 欧玛 ==================== -->
   <div class="brand-panel" id="brand-auma">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('auma','sa',this)">SA/SAR<span class="sub">多回转·智能型</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','sq',this)">SQ/SQR<span class="sub">部分回转</span></button>
-          <button class="tab-btn" onclick="showSeries('auma','sar',this)">SAR<span class="sub">多回转·调节型</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','sqr',this)">SQR<span class="sub">部分回转·调节型</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','sg',this)">SG齿轮箱<span class="sub">配齿轮箱·大扭矩</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','saex',this)">SAEX/SQEX<span class="sub">防爆型</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','tigron',this)">TIGRON<span class="sub">高端智能型</span></button>
-      <button class="tab-btn" onclick="showSeries('auma','st',this)">ST/SV<span class="sub">直行程</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('auma','sa',this)">SA/SAR<span class="sub">多回转·智能型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','sq',this)">SQ/SQR<span class="sub">部分回转</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('auma','sar',this)">SAR<span class="sub">多回转·调节型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','sqr',this)">SQR<span class="sub">部分回转·调节型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','sg',this)">SG齿轮箱<span class="sub">配齿轮箱·大扭矩</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','saex',this)">SAEX/SQEX<span class="sub">防爆型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','tigron',this)">TIGRON<span class="sub">高端智能型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('auma','st',this)">ST/SV<span class="sub">直行程</span></button>
     </div>
     <div class="series-panel active" id="auma-sa">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-sa','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-sa','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-sa','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-sa','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-sa','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-sa','detail',this)">端子表</button></div>
       <div class="ver-panel" id="auma-sa-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>AUMA特点</h3><div class="term-desc">德国AUMA（欧玛），SA/SAR多回转，SQ/SQR部分回转。配AUMA MATIC或AM控制单元，<strong>按键+显示屏</strong>调试，无需设定器。端子号1-50，功能可配置。手轮上栓有接线图塑料袋。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V（SAR16.2可选单相220V），最大10mm²</div></div></div>
@@ -3009,7 +3005,7 @@
 <!-- 系列ID: auma-sar -->
     </div>
     <div class="series-panel" id="auma-sq">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-sq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-sq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-sq','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-sq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-sq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-sq','detail',this)">端子表</button></div>
       <div class="ver-panel" id="auma-sq-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>SQ与SA的区别</h3><div class="term-desc">SQ/SQR是<strong>部分回转（角行程）</strong>，用于蝶阀、球阀等90°阀门。<strong>接线端子、控制单元、调试方法与SA完全相同</strong>，只是机械结构和行程范围不同（0-90°）。请参考上方SA系列。</div></div>
       </div></div>
@@ -3027,14 +3023,10 @@
 <div class="debug-block"><h4><span class="step-num">📖</span>官方说明书</h4><p>• <a href="https://www.manualslib.com/manual/1809194/Auma-Sq-Series.html" target="_blank">AUMA SQ系列部分回转执行器操作手册（ManualsLib在线）</a><br>• <a href="https://www.manualslib.com/manual/3274703/Auma-Sq-05-2-Sq-14-2.html" target="_blank">AUMA SQ 05.2-14.2/SQR操作说明书（ManualsLib）</a><br>• SQ与SA共用AUMATIC控制单元，电气调试部分可参考SA系列说明书<br>• 官网：<a href="https://www.auma.com" target="_blank">www.auma.com</a> → Downloads → Product document finder</p></div>
 </div></div>
 
-<!-- 系列ID: auma-sqr -->
-
-<!-- 系列ID: auma-sqr -->
-
-<!-- 系列ID: auma-sqr --></div>
+</div>
   
     <div class="series-panel" id="auma-sar">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-sar','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-sar','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-sar','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-sar','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-sar','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-sar','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-sar-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>SAR调节型特点</h3><div class="term-desc">SAR为SA的<strong>调节型版本</strong>，S4/S5间歇工作制，最大1200次/小时。内置电气定位板，接收4-20mA信号自动定位。端子同SA，<strong>增加模拟量给定(26/27)和阀位反馈(28/29)</strong>。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V，可选单相220V，最大10mm²</div></div></div>
@@ -3070,16 +3062,12 @@
 </div></div>
 
 <!-- 系列ID: auma-sq -->
-
-<!-- 系列ID: auma-sq -->
-
-<!-- 系列ID: auma-sq -->
 </div>
 
 <!-- 2. SQR 部分回转·调节型 -->
-<button class="tab-btn" onclick="showSeries('auma','sqr',this)">SQR<span class="sub">部分回转·调节型</span></button>
+
     <div class="series-panel" id="auma-sqr">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-sqr','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-sqr','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-sqr','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-sqr','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-sqr','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-sqr','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-sqr-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>SQR调节型特点</h3><div class="term-desc">SQR为SQ的<strong>调节型版本</strong>，一体化部分回转（角行程90°）执行器，适用于蝶阀、球阀、旋塞阀。<strong>电气接线、端子排和调试方法与SAR完全相同</strong>（共用AUMATIC控制单元+定位板），区别仅在输出为90°角行程。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V，可选单相220V</div></div></div>
@@ -3121,9 +3109,9 @@
 </div>
 
 <!-- 3. SG 配齿轮箱·大扭矩 -->
-<button class="tab-btn" onclick="showSeries('auma','sg',this)">SG齿轮箱<span class="sub">配齿轮箱·大扭矩</span></button>
+
     <div class="series-panel" id="auma-sg">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-sg','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-sg','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-sg','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-sg','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-sg','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-sg','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-sg-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>SG齿轮箱组合特点</h3><div class="term-desc">SG系列为AUMA<strong>角行程齿轮箱</strong>，与SA多回转执行器组合（如SA14.2+SG10），将多回转输出转为90°角行程，大幅增大输出力矩（可达数万Nm），适用于大口径蝶阀、球阀。<strong>SG齿轮箱本身无电气部件</strong>，所有接线和调试在配套的SA执行器上完成，端子同SA。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（SA执行器侧）</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V，由配套SA执行器提供</div></div></div>
@@ -3162,9 +3150,9 @@
 </div>
 
 <!-- 4. SAEX/SQEX 防爆型 -->
-<button class="tab-btn" onclick="showSeries('auma','saex',this)">SAEX/SQEX<span class="sub">防爆型</span></button>
+
     <div class="series-panel" id="auma-saex">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-saex','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-saex','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-saex','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-saex','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-saex','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-saex','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-saex-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>防爆型特点</h3><div class="term-desc">SAEX/SQEX为AUMA<strong>防爆型执行器</strong>，适用于石油、化工、天然气等易燃易爆危险区域。防爆等级Ex d IIB T4/T5或Ex de，符合ATEX/IECEx标准。<strong>端子布局同SA/SQ</strong>，但外壳为隔爆型，接线需使用防爆电缆格兰头。<strong>Exd隔爆型控制信号为非本安回路，直接接入即可，不需要安全栅；如选配本安型(Exi)控制模块，则本安信号必须经安全栅接入。</strong></div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V，防爆电缆格兰头进线，AMP环形接头</div></div></div>
@@ -3206,9 +3194,9 @@
 </div>
 
 <!-- 5. TIGRON 高端智能型 -->
-<button class="tab-btn" onclick="showSeries('auma','tigron',this)">TIGRON<span class="sub">高端智能型</span></button>
+
     <div class="series-panel" id="auma-tigron">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-tigron','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-tigron','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-tigron','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-tigron','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-tigron','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-tigron','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-tigron-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>TIGRON高端系列特点</h3><div class="term-desc">TIGRON为AUMA<strong>高端智能系列</strong>，采用分体式设计（控制单元与机械本体分离安装），高性能变频控制，适用于高温、高振动、空间受限等恶劣工况。<strong>LCD显示+Combi-Switch选择开关</strong>调试，支持AUMA Assistant APP蓝牙连接。端子分为<strong>X1电源</strong>和<strong>X2控制</strong>两组端子排，支持全功能总线通信和高级诊断。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>X1 动力电源</h3><div class="term-row"><div class="pair-wrap power"><span class="pair-tag">X1电源</span><div class="term-box power"><span class="num">L1</span></div><span class="plus-sign">+</span><div class="term-box power"><span class="num">L2</span></div><span class="plus-sign">+</span><div class="term-box power"><span class="num">L3</span></div><span class="plus-sign">+</span><div class="term-box power"><span class="num">PE</span></div></div></div><div class="term-desc">X1端子排：三相380V AC 50/60Hz（变频输入，无相序要求），PE保护接地</div></div>
@@ -3252,9 +3240,9 @@
 </div>
 
 <!-- 6. ST/SV 直行程 -->
-<button class="tab-btn" onclick="showSeries('auma','st',this)">ST/SV<span class="sub">直行程</span></button>
+
     <div class="series-panel" id="auma-st">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('auma-st','debug',this)">调试</button><button class="ver-btn" onclick="showVer('auma-st','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('auma-st','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('auma-st','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('auma-st','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('auma-st','detail',this)">端子表</button></div>
 <div class="ver-panel" id="auma-st-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>ST/SV直行程特点</h3><div class="term-desc">ST/SV系列为AUMA<strong>直行程执行器</strong>，将旋转输出转为直线推力，适用于闸阀、截止阀、调节阀等需要直线位移的阀门。<strong>ST为推力型，SV为开关型，SVR为调节型</strong>。电气控制部分与SA/SQ相同，端子同SA，机械部分为丝杠/推杆结构，需调整线性行程挡块。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2/N</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380V，可选单相220V</div></div></div>
@@ -3297,18 +3285,18 @@
   <!-- ==================== 伯纳德 Bernard / 扬修 ==================== -->
   <div class="brand-panel" id="brand-bernard">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('bernard','st',this)">ST/ASP<span class="sub">多回转·法国伯纳德</span></button>
-      <button class="tab-btn" onclick="showSeries('bernard','aq',this)">AQ/SG<span class="sub">角行程·天津伯纳德</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('bernard','st',this)">ST/ASP<span class="sub">多回转·法国伯纳德</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('bernard','aq',this)">AQ/SG<span class="sub">角行程·天津伯纳德</span></button>
       
-          <button class="tab-btn" onclick="showSeries('bernard','as-bs',this)">AS/BS/SD<span class="sub">伯纳德常规角行程/多回转</span></button>
-      <button class="tab-btn" onclick="showSeries('bernard','qt-ot',this)">QT/OT<span class="sub">部分回转/角行程</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('bernard','as-bs',this)">AS/BS/SD<span class="sub">伯纳德常规角行程/多回转</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('bernard','qt-ot',this)">QT/OT<span class="sub">部分回转/角行程</span></button>
       
       
       
       
     </div>
     <div class="series-panel active" id="bernard-st">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('bernard-st','debug',this)">调试</button><button class="ver-btn" onclick="showVer('bernard-st','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('bernard-st','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('bernard-st','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('bernard-st','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('bernard-st','detail',this)">端子表</button></div>
       <div class="ver-panel" id="bernard-st-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>伯纳德特点</h3><div class="term-desc">法国BERNARD CONTROLS，ST多回转，SQ/ASP角行程。智能型配TAM或LOGIC控制单元，<strong>按键+显示屏</strong>调试。天津伯纳德为国内常见仿制品，技术类似。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">U</span></div><div class="term-box power"><span class="num">L2</span><span class="label">V</span></div><div class="term-box power"><span class="num">L3</span><span class="label">W</span></div><div class="term-desc">三相380V或单相220V，电机内置热敏保护</div></div></div>
@@ -3405,7 +3393,7 @@
 <!-- 系列ID: aq -->
     </div>
     <div class="series-panel" id="bernard-aq">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('bernard-aq','debug',this)">调试</button><button class="ver-btn" onclick="showVer('bernard-aq','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('bernard-aq','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('bernard-aq','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('bernard-aq','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('bernard-aq','detail',this)">端子表</button></div>
       <div class="ver-panel" id="bernard-aq-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>AQ/SG角行程</h3><div class="term-desc">天津伯纳德AQ系列角行程，配SG-1M无触点功率模块或智能控制板。<strong>接线和调试与ST多回转类似</strong>，行程0-90°。智能型按键菜单，常规型机械凸轮。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L</span></div><div class="term-box power"><span class="num">2</span><span class="label">N</span></div><div class="term-desc">单相220V（常见）或三相380V</div></div></div>
@@ -3493,7 +3481,7 @@
 <!-- 系列ID: yx -->
     </div>
     <div class="series-panel" id="bernard-as-bs">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('bernard-as-bs','debug',this)">调试</button><button class="ver-btn" onclick="showVer('bernard-as-bs','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('bernard-as-bs','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('bernard-as-bs','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('bernard-as-bs','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('bernard-as-bs','detail',this)">端子表</button></div>
 <div class="ver-panel" id="bernard-as-bs-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>AS/BS/SD常规型</h3><div class="term-desc">天津伯纳德常规型电动执行器，<strong>AS角行程/BS多回转/SD直行程</strong>，端子1-40。内置接触器、热继电器、变压器，行程开关和转矩开关保护。配A303V智能控制板（相序自动调整、缺相保护、过力矩保护）。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V±10% 50Hz（220V可订货），无相序要求（自动相序调整）</div></div></div>
@@ -3603,7 +3591,7 @@
 
 <!-- ==================== 2. QT/OT ==================== -->
     <div class="series-panel" id="bernard-qt-ot">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('bernard-qt-ot','debug',this)">调试</button><button class="ver-btn" onclick="showVer('bernard-qt-ot','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('bernard-qt-ot','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('bernard-qt-ot','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('bernard-qt-ot','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('bernard-qt-ot','detail',this)">端子表</button></div>
 <div class="ver-panel" id="bernard-qt-ot-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>QT/OT部分回转/角行程</h3><div class="term-desc">天津伯纳德<strong>QT部分回转型/OT角行程</strong>电动执行器，用于蝶阀、球阀等90°阀门。<strong>接线端子、控制方式与ST系列完全相同</strong>，只是机械结构和行程范围不同（0-90°）。内置接触器、热继电器、变压器。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V，电机内置热敏保护</div></div></div>
@@ -3710,16 +3698,16 @@
   </div>
 
   <!-- ==================== 西博思 SIPOS ==================== -->
-  <div class="brand-panel" id="brand-yangxiu"><div class="series-tabs"><button class="tab-btn" onclick="showSeries('yangxiu','yx',this)">扬修<span class="sub">扬州电力·国产</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dzw',this)">DZW<span class="sub">扬修多回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','dqw',this)">DQW<span class="sub">扬修部分回转</span></button><button class="tab-btn" onclick="showSeries('yangxiu','yangxiu-2sa3',this)">扬修2SA3<span class="sub">扬修2SA3系列</span></button><button class="tab-btn" onclick="showSeries('yangxiu','lqa',this)">LQA<span class="sub">立式曲柄式</span></button></div><div class="series-panel" id="yangxiu-yx">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-yx','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-yx','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-yx','detail',this)">端子表</button></div>
-      <div class="ver-panel" id="bernard-yx-simple"><div class="simple-section">
+  <div class="brand-panel" id="brand-yangxiu"><div class="series-tabs"><button type="button" class="tab-btn" onclick="showSeries('yangxiu','yx',this)">扬修<span class="sub">扬州电力·国产</span></button><button type="button" class="tab-btn" onclick="showSeries('yangxiu','dzw',this)">DZW<span class="sub">扬修多回转</span></button><button type="button" class="tab-btn" onclick="showSeries('yangxiu','dqw',this)">DQW<span class="sub">扬修部分回转</span></button><button type="button" class="tab-btn" onclick="showSeries('yangxiu','yangxiu-2sa3',this)">扬修2SA3<span class="sub">扬修2SA3系列</span></button><button type="button" class="tab-btn" onclick="showSeries('yangxiu','lqa',this)">LQA<span class="sub">立式曲柄式</span></button></div><div class="series-panel" id="yangxiu-yx">
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('yangxiu-yx','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-yx','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-yx','detail',this)">端子表</button></div>
+      <div class="ver-panel" id="yangxiu-yx-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>扬修（扬州电力）</h3><div class="term-desc">扬州电力设备修造厂（扬修），国产老牌，主产DZW/DQW阀门电动装置与2SA3系列（西门子技术路线）。本页为扬修常规电动装置速查，端子与调试方法以铭牌接线图为准。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">U</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W</span><span class="label">L3</span></div><div class="term-desc">三相380V，电机S2短时工作制</div></div></div>
         <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span></div></div></div><div class="term-desc">配LK-3或类似控制模块，远方/就地切换</div></div>
         <div class="simple-block block-feedback"><h3><span class="icon">反</span>反馈 + 电位器</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">行程开关</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">电位器</span><div class="term-box analog-in"><span class="num">A</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">B</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">C</span></div></div></div></div>
       </div></div>
-      <div class="ver-panel" id="bernard-yx-detail"><div class="detail-section"><div class="detail-note">扬修端子号因型号和配置不同而异，以铭牌接线图为准。调试方法与伯纳德/西门子2SA3相同。</div></div></div>
-      <div class="ver-panel active" id="bernard-yx-debug"><div class="debug-section">
+      <div class="ver-panel" id="yangxiu-yx-detail"><div class="detail-section"><div class="detail-note">扬修端子号因型号和配置不同而异，以铭牌接线图为准。调试方法与伯纳德/西门子2SA3相同。</div></div></div>
+      <div class="ver-panel active" id="yangxiu-yx-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂（扬修）常规型电动执行机构，国产老牌，<strong>技术源自伯纳德</strong>，接线端子、行程/力矩调整方法与伯纳德ST/西门子2SA3基本相同。配LK-3或类似控制模块，远方/就地切换。通电前检查：①动力电源U/V/W（L1/L2/L3）三相380V，电机S2短时工作制；②远程控制开/关/公共端子接线；③行程开关S1-S4（开到位/关到位）；④电位器A/B/C（阀位远传，1KΩ）；⑤力矩开关触点。首次通电：手动到50%位置，点动验证旋向，<strong>行程控制机构下中传小齿轮顺时针转为开</strong>，方向反了调换任意两根电源线。相序接反会导致力矩和行程机构均不起作用！</p>
   </div>
@@ -3777,21 +3765,19 @@
   </div>
 </div></div>
 
-<!-- 系列ID: as-bs -->
 
-<!-- 系列ID: as-bs -->
     </div>
   
     <div class="series-panel" id="yangxiu-dzw">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-dzw','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-dzw','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-dzw','detail',this)">端子表</button></div>
-<div class="ver-panel" id="bernard-dzw-simple"><div class="simple-section">
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('yangxiu-dzw','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-dzw','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-dzw','detail',this)">端子表</button></div>
+<div class="ver-panel" id="yangxiu-dzw-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修DZW多回转</h3><div class="term-desc">扬州电力设备修造厂<strong>DZW系列多回转阀门电动装置</strong>，常规户外型。端子1-40，<strong>机械凸轮式</strong>行程设定。内置空气开关Q、接触器KO/KC、热继电器FR、行程开关LSO/LSC、转矩开关TSO/TSC（DK3-2A）。A端子为常规产品（行程开/关各一对常开常闭无源触点），B端子为特殊订货（各三对）。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V 50Hz，经空气开关Q接入，电机S2短时工作制</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">QC现场/远控转换开关，就地SBO/SBC按钮，远方开关量指令</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">LSO/LSC行程开关，A端子各一对常开常闭，B端子各三对</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 热保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">TSO/TSC转矩开关DK3-2A，TH热敏开关（特殊订货），FR热继电器过载保护</div></div>
 </div></div>
-<div class="ver-panel" id="bernard-dzw-detail"><div class="detail-section">
+<div class="ver-panel" id="yangxiu-dzw-detail"><div class="detail-section">
 <div class="detail-note">DZW系列端子1-40，<strong>A端子常规产品（行程开/关各一对常开常闭），B端子特殊订货（各三对）</strong>。以铭牌接线图为准。内置完整电气控制元件。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V，经空气开关Q</td></tr>
@@ -3802,7 +3788,7 @@
 <tr class="status-row"><td class="t-num">TH</td><td class="t-signal">热敏开关</td><td class="t-func">电机过热保护（特殊订货）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="bernard-dzw-debug"><div class="debug-section">
+<div class="ver-panel active" id="yangxiu-dzw-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>DZW系列多回转阀门电动装置</strong>，常规户外型，用于闸阀、截止阀等多回转阀门。端子1-40，<strong>机械凸轮式</strong>行程设定。内置空气开关Q、接触器KO/KC、热继电器FR、行程开关LSO/LSC、转矩开关TSO/TSC（DK3-2A型）。A端子=常规产品（行程开/关各一对常开常闭无源触点），B端子=特殊订货（各三对）。通电前检查：①动力电源1(L1)/2(L2)/3(L3)三相380V 50Hz，经空气开关Q接入，电机S2短时工作制；②QC现场/远控转换开关，就地SBO/SBC按钮，远方开/关/停/公共端子；③开到位S1-S2、关到位S3-S4（LSO/LSC行程开关）；④开力矩D1-D2、关力矩D3-D4（TSO/TSC DK3-2A转矩开关）；⑤FR热继电器、TH热敏开关（特殊订货）。首次通电：手轮将阀门开启至50%开度，按下开/关键检查旋向，<strong>不一致立即按停止，调换三相电源任意二相</strong>。相序接反会导致力矩和行程机构均不起作用！提前把机械限位顶丝退出来，防止顶伤。</p>
   </div>
@@ -3885,15 +3871,15 @@
 
 <!-- ==================== 4. DQW 部分回转 ==================== -->
     <div class="series-panel" id="yangxiu-dqw">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-dqw','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-dqw','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-dqw','detail',this)">端子表</button></div>
-<div class="ver-panel" id="bernard-dqw-simple"><div class="simple-section">
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('yangxiu-dqw','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-dqw','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-dqw','detail',this)">端子表</button></div>
+<div class="ver-panel" id="yangxiu-dqw-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修DQW部分回转</h3><div class="term-desc">扬州电力设备修造厂<strong>DQW系列部分回转阀门电动装置</strong>，用于蝶阀、球阀等90°阀门。DQJW为角行程调节型。<strong>端子定义与DZW基本相同</strong>，有户外型和隔爆型（dI/dⅡBT4），户外型和隔爆型端子接线图不同。内置完整电气控制元件。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V，经空气开关Q，变压器B供电控制回路</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">QC现场/远控转换，SO/SC/SS按钮，端子同DZW</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈 + 开度表</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">LSO/LSC行程开关，CB开度表显示阀门位置，YD/RD/GD指示灯</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">转矩开关机械调整，FR热继电器，TH热敏开关，FU熔断器保护</div></div>
 </div></div>
-<div class="ver-panel" id="bernard-dqw-detail"><div class="detail-section">
+<div class="ver-panel" id="yangxiu-dqw-detail"><div class="detail-section">
 <div class="detail-note">DQW系列<strong>端子定义与DZW基本相同</strong>。户外型和隔爆型端子接线图不同（分别见图8和图9），调试时先查电机铭牌和执行器铭牌，按铭牌接线图要求接线。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V</td></tr>
@@ -3904,7 +3890,7 @@
 <tr class="status-row"><td class="t-num">TH/FR/FU</td><td class="t-signal">保护元件</td><td class="t-func">热敏/热继电器/熔断器</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="bernard-dqw-debug"><div class="debug-section">
+<div class="ver-panel active" id="yangxiu-dqw-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>DQW系列部分回转阀门电动装置</strong>，用于蝶阀、球阀等90°阀门。DQJW为角行程调节型。<strong>端子定义与DZW基本相同</strong>，有户外型和隔爆型（dI/dⅡBT4），<strong>户外型和隔爆型端子接线图不同</strong>（分别见图8和图9）。内置空气开关Q、接触器KO/KC、热继电器FR、变压器B、行程开关LSO/LSC、转矩开关TSO/TSC、开度表CB、指示灯YD/RD/GD。通电前检查：①先查电机铭牌和执行器铭牌，按铭牌接线图要求接线（户外型/隔爆型不同！）；②动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V，经空气开关Q，变压器B供电控制回路；③QC现场/远控转换，SO/SC/SS就地按钮，远方开/关/停/公共端子；④开到位S1-S2、关到位S3-S4；⑤开力矩D1-D2、关力矩D3-D4；⑥CB开度表，TH/FR/FU保护元件。根据额定电流选择电缆，电缆末端用压接端子。首次通电：手动到50%位置，点动验证旋向，方向反了调换任意两根电源线。</p>
   </div>
@@ -3987,15 +3973,15 @@
 
 <!-- ==================== 5. 扬修 2SA3 ==================== -->
     <div class="series-panel" id="yangxiu-yangxiu-2sa3">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-yangxiu-2sa3','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','detail',this)">端子表</button></div>
-<div class="ver-panel" id="bernard-yangxiu-2sa3-simple"><div class="simple-section">
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('yangxiu-yangxiu-2sa3','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-yangxiu-2sa3','detail',this)">端子表</button></div>
+<div class="ver-panel" id="yangxiu-yangxiu-2sa3-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>扬修2SA3系列</h3><div class="term-desc">扬州电力设备修造厂生产的<strong>2SA3系列多回转电动执行机构</strong>，<strong>西门子技术</strong>，非侵入式设计。法兰号F07到F30，型号2SA3010/3011/3020/3021/3030/3031/3040/3041等。<strong>端子定义与西门子2SA3完全相同</strong>，通过红外设定器或现场按键操作。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V，端子同西门子2SA3</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">端子同西门子2SA3，非侵入式红外设定</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈 + 4-20mA</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA反馈</span><div class="term-box analog-out"><span class="num">+</span></div><span class="plus-sign">+</span><div class="term-box analog-out"><span class="num">-</span></div></div></div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 故障</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">端子同西门子2SA3，力矩通过设定器设定，非机械调整</div></div>
 </div></div>
-<div class="ver-panel" id="bernard-yangxiu-2sa3-detail"><div class="detail-section">
+<div class="ver-panel" id="yangxiu-yangxiu-2sa3-detail"><div class="detail-section">
 <div class="detail-note">扬修2SA3系列<strong>端子定义与西门子2SA3完全相同</strong>，请参考西门子2SA3端子表。非侵入式设计，通过红外设定器或现场按键设定行程和力矩。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V（同西门子2SA3）</td></tr>
@@ -4005,7 +3991,7 @@
 <tr class="analog-row"><td class="t-num">+/-</td><td class="t-signal">4-20mA</td><td class="t-func">阀位反馈输出（调节型）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="bernard-yangxiu-2sa3-debug"><div class="debug-section">
+<div class="ver-panel active" id="yangxiu-yangxiu-2sa3-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂生产的<strong>2SA3系列多回转电动执行机构</strong>，<strong>西门子技术</strong>，非侵入式设计（无需开盖即可调试）。法兰号F07到F30，型号2SA3010/3011/3020/3021/3030/3031/3040/3041等。<strong>端子定义与西门子2SA3完全相同</strong>，通过红外设定器或现场按键操作。力矩通过设定器设定（非机械弹簧调整），与DZW/DQW不同。通电前检查：①检查执行机构及阀门是否正常，手动操作检查连接；②查看电机铭牌、执行机构铭牌、电机接线图和执行机构接线图；③按铭牌要求接线，根据额定电流选择电缆，电缆末端裸露部分使用压接端子；④动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V；⑤远程控制开/关/停/公共端子；⑥开到位S1-S2、关到位S3-S4反馈；⑦力矩/故障D1-D4；⑧4-20mA反馈+/-（调节型）。首次通电：手轮将执行机构运行至行程中间位置，电动操作"开"或"关"，运行时间尽可能短，检查旋转方向是否正确，<strong>方向反了调换任意两根电源线</strong>。</p>
   </div>
@@ -4107,15 +4093,15 @@
 
 <!-- ==================== 6. LQA ==================== -->
     <div class="series-panel" id="yangxiu-lqa">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('yangxiu-lqa','debug',this)">调试</button><button class="ver-btn" onclick="showVer('yangxiu-lqa','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('yangxiu-lqa','detail',this)">端子表</button></div>
-<div class="ver-panel" id="bernard-lqa-simple"><div class="simple-section">
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('yangxiu-lqa','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-lqa','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('yangxiu-lqa','detail',this)">端子表</button></div>
+<div class="ver-panel" id="yangxiu-lqa-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>LQA立式曲柄式</h3><div class="term-desc">扬州电力设备修造厂<strong>LQA系列立式曲柄式部分回转阀门电动装置</strong>，用于蝶阀、球阀等部分回转阀门。<strong>接线方式与DQW常规型基本一致</strong>，有户外型和隔爆型。立式安装，曲柄连杆机构输出角行程。动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈，转矩保护。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">2</span><span class="label">L2</span></div><div class="term-box power"><span class="num">3</span><span class="label">L3</span></div><div class="term-desc">三相380V或单相220V（L/N），端子同DZW/DQW</div></div></div>
 <div class="simple-block block-control"><h3><span class="icon">控</span>开关指令</h3><div class="term-row"><div class="pair-wrap control"><span class="pair-tag">远程控制</span><div class="term-box control"><span class="num">开</span><span class="label">远程开</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">关</span><span class="label">远程关</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">停</span><span class="label">远程停</span></div><span class="plus-sign">+</span><div class="term-box control"><span class="num">公共</span><span class="label">COM</span></div></div></div><div class="term-desc">远程开/关/停指令，公共端，端子同DZW</div></div>
 <div class="simple-block block-feedback"><h3><span class="icon">反</span>开关反馈</h3><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">开到位</span><div class="term-box feedback"><span class="num">S1</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S2</span></div></div></div><div class="term-row"><div class="pair-wrap feedback"><span class="pair-tag">关到位</span><div class="term-box feedback"><span class="num">S3</span></div><span class="plus-sign">+</span><div class="term-box feedback"><span class="num">S4</span></div></div></div><div class="term-desc">行程开关反馈（开/关到位），端子同DZW/DQW</div></div>
 <div class="simple-block block-status"><h3><span class="icon">状</span>力矩 + 保护</h3><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">开力矩</span><div class="term-box status"><span class="num">D1</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D2</span></div></div></div><div class="term-row"><div class="pair-wrap status"><span class="pair-tag">关力矩</span><div class="term-box status"><span class="num">D3</span></div><span class="plus-sign">+</span><div class="term-box status"><span class="num">D4</span></div></div></div><div class="term-desc">转矩保护，机械凸轮式调整，端子同DZW/DQW</div></div>
 </div></div>
-<div class="ver-panel" id="bernard-lqa-detail"><div class="detail-section">
+<div class="ver-panel" id="yangxiu-lqa-detail"><div class="detail-section">
 <div class="detail-note">LQA系列<strong>接线方式与DQW常规型基本一致</strong>：动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈（开/关到位），转矩保护。以铭牌接线图为准。</div>
 <table class="detail-table"><thead><tr><th>端子</th><th>信号</th><th>作用</th></tr></thead><tbody>
 <tr class="power-row"><td class="t-num">1/2/3</td><td class="t-signal">动力电源</td><td class="t-func">三相380V或单相220V（同DZW）</td></tr>
@@ -4124,7 +4110,7 @@
 <tr class="status-row"><td class="t-num">D1-D4</td><td class="t-signal">力矩开关</td><td class="t-func">开/关向过力矩（同DZW）</td></tr>
 </tbody></table>
 </div></div>
-<div class="ver-panel active" id="bernard-lqa-debug"><div class="debug-section">
+<div class="ver-panel active" id="yangxiu-lqa-debug"><div class="debug-section">
   <div class="debug-block"><h4><span class="step-num">1</span>产品特点与通电前检查</h4>
     <p>扬州电力设备修造厂<strong>LQA系列立式曲柄式部分回转阀门电动装置</strong>，用于蝶阀、球阀等部分回转阀门。<strong>接线方式与DQW常规型基本一致</strong>，有户外型和隔爆型。立式安装，曲柄连杆机构输出角行程（0-90°）。动力电源L1/L2/L3（或L/N），远程开/关/停指令，行程开关反馈（开/关到位），转矩保护。通电前检查：①动力电源1(L1)/2(L2)/3(L3)三相380V或单相220V（L/N），端子同DZW/DQW；②远程控制开/关/停/公共端子；③开到位S1-S2、关到位S3-S4反馈；④开力矩D1-D2、关力矩D3-D4；⑤立式安装基础牢固，曲柄连杆机构与阀门连接正确。首次通电：手动到50%位置，点动验证旋向和曲柄运动方向，方向反了调换任意两根电源线。相序接反会导致力矩和行程机构均不起作用！</p>
   </div>
@@ -4206,16 +4192,16 @@
 </div></div>
 </div></div><div class="brand-panel" id="brand-sipos">
     <div class="series-tabs">
-      <button class="tab-btn" onclick="showSeries('sipos','ecotron',this)">ECOTRON<span class="sub">经济型·开关量</span></button>
-      <button class="tab-btn" onclick="showSeries('sipos','profitron',this)">PROFITRON<span class="sub">专业型·调节型</span></button>
-          <button class="tab-btn active" onclick="showSeries('sipos','sipos7',this)">SIPOS 7<span class="sub">新一代·XK插头</span></button>
-      <button class="tab-btn" onclick="showSeries('sipos','ecotron-xk',this)">ECOTRON XK<span class="sub">经济型·XK插头</span></button>
-      <button class="tab-btn" onclick="showSeries('sipos','profitron-420ma',this)">PROFITRON 4-20mA<span class="sub">专业型·模拟量</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('sipos','ecotron',this)">ECOTRON<span class="sub">经济型·开关量</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('sipos','profitron',this)">PROFITRON<span class="sub">专业型·调节型</span></button>
+          <button type="button" class="tab-btn active" onclick="showSeries('sipos','sipos7',this)">SIPOS 7<span class="sub">新一代·XK插头</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('sipos','ecotron-xk',this)">ECOTRON XK<span class="sub">经济型·XK插头</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('sipos','profitron-420ma',this)">PROFITRON 4-20mA<span class="sub">专业型·模拟量</span></button>
     </div>
 
     <!-- ECOTRON 经济型 -->
     <div class="series-panel active" id="sipos-ecotron">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('sipos-ecotron','debug',this)">调试</button><button class="ver-btn" onclick="showVer('sipos-ecotron','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('sipos-ecotron','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('sipos-ecotron','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('sipos-ecotron','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('sipos-ecotron','detail',this)">端子表</button></div>
       <div class="ver-panel" id="sipos-ecotron-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>西博思ECOTRON经济型</h3><div class="term-desc">德国西博思（SIPOS）5 Flash ECOTRON经济型，开关量控制。四个端子排：<strong>X1电源、X2继电器板、X3.1控制输入、X3.2短接/公共</strong>。<span class="warn-text">⚠️ X3.2的18脚和19脚必须短接，缺了执行器不动！</span></div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（X1端子）</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接X1的L1/L2/L3（三相任接，自动判向）；单相220V接L1/N。地线接机壳接地柱</div></div></div>
@@ -4260,7 +4246,7 @@
 
     <!-- PROFITRON 专业型 -->
     <div class="series-panel" id="sipos-profitron">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('sipos-profitron','debug',this)">调试</button><button class="ver-btn" onclick="showVer('sipos-profitron','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('sipos-profitron','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('sipos-profitron','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('sipos-profitron','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('sipos-profitron','detail',this)">端子表</button></div>
       <div class="ver-panel" id="sipos-profitron-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>西博思PROFITRON专业型</h3><div class="term-desc">SIPOS 5 Flash PROFITRON专业型，变频智能型，4-20mA调节控制。四个端子排：X1电源、X2继电器板、X3.1反馈输出、X3.2控制输入。支持Profibus/Modbus总线。调试密码9044。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（X1端子）</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接X1的L1/L2/L3。变频驱动，自动判相，无需考虑相序</div></div></div>
@@ -4301,7 +4287,7 @@
     </div>
   
     <div class="series-panel" id="sipos-sipos7">
-    <div class="version-tabs"><button class="ver-btn active" onclick="showVer('sipos-sipos7','debug',this)">调试</button><button class="ver-btn" onclick="showVer('sipos-sipos7','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('sipos-sipos7','detail',this)">端子表</button></div>
+    <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('sipos-sipos7','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('sipos-sipos7','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('sipos-sipos7','detail',this)">端子表</button></div>
     <div class="ver-panel" id="sipos-sipos7-simple"><div class="simple-section">
       <div class="simple-block block-note"><h3><span class="icon">说</span>SIPOS 7 (SEVEN) 新一代</h3><div class="term-desc">德国西博思SIPOS 7 (SEVEN) 新一代系列，采用<strong>XK圆形插头</strong>双密封连接（IP68），光电隔离分区设计。开关量输入(1-6)和输出(15-22)分为独立隔离区，内供24V时需将内部电源(23/39)跨接到各区域。<span class="warn-text">⚠️ 输入区和输出区各需跨接P24+(23)和G24-(39)，共4条跨接线！</span><br><span class="warn-text">⚠️ XK圆形插头详细针脚号以官方接线图PDF（siposchina.com可下载）为准。</span></div></div>
       <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（X1端子）</h3><div class="term-row"><div class="term-box power"><span class="num">U1</span><span class="label">L1</span></div><div class="term-box power"><span class="num">V1</span><span class="label">L2</span></div><div class="term-box power"><span class="num">W1</span><span class="label">L3</span></div><div class="term-desc">三相380-460V接U1/V1/W1；单相220V接U2/V2。PE保护接地。变频驱动自动判相</div></div></div>
@@ -4356,7 +4342,7 @@
 
   <!-- ECOTRON XK圆形插头版 -->
     <div class="series-panel" id="sipos-ecotron-xk">
-    <div class="version-tabs"><button class="ver-btn active" onclick="showVer('sipos-ecotron-xk','debug',this)">调试</button><button class="ver-btn" onclick="showVer('sipos-ecotron-xk','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('sipos-ecotron-xk','detail',this)">端子表</button></div>
+    <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('sipos-ecotron-xk','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('sipos-ecotron-xk','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('sipos-ecotron-xk','detail',this)">端子表</button></div>
     <div class="ver-panel" id="sipos-ecotron-xk-simple"><div class="simple-section">
       <div class="simple-block block-note"><h3><span class="icon">说</span>ECOTRON XK圆形插头版</h3><div class="term-desc">SIPOS 5 Flash ECOTRON经济型，<strong>XK圆形插头式连接</strong>（带继电器板），开关量控制。三个接口：X1电源、X2继电器板反馈、XK插头控制输入。<span class="warn-text">⚠️ XK插头的5脚和6脚必须短接（开关指令公共端），缺了指令不生效！</span><br><span class="warn-text">⚠️ XK插头详细针脚号以官方接线图PDF为准。</span></div></div>
       <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（X1端子）</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接X1的L1/L2/L3（自动判向）；单相220V接L1/N。PE接地</div></div></div>
@@ -4404,7 +4390,7 @@
 
   <!-- PROFITRON 4-20mA模拟量版 -->
     <div class="series-panel" id="sipos-profitron-420ma">
-    <div class="version-tabs"><button class="ver-btn active" onclick="showVer('sipos-profitron-420ma','debug',this)">调试</button><button class="ver-btn" onclick="showVer('sipos-profitron-420ma','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('sipos-profitron-420ma','detail',this)">端子表</button></div>
+    <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('sipos-profitron-420ma','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('sipos-profitron-420ma','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('sipos-profitron-420ma','detail',this)">端子表</button></div>
     <div class="ver-panel" id="sipos-profitron-420ma-simple"><div class="simple-section">
       <div class="simple-block block-note"><h3><span class="icon">说</span>PROFITRON 4-20mA模拟量版</h3><div class="term-desc">SIPOS 5 Flash PROFITRON专业型，<strong>4-20mA模拟量调节控制</strong>。变频智能型，内置位置控制器。<span class="warn-text">⚠️ 模拟量控制下有多条必须短接的端子对！不接15-18会烧毁模拟量输入通道电阻！</span>控制板版本差异：2004年4月后新控制板15-18内部已短接，老版需外部短接。</div></div>
       <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源（X1端子）</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接X1的L1/L2/L3。变频驱动，自动判相，无需考虑相序</div></div></div>
@@ -4469,15 +4455,15 @@
   <!-- ==================== 重庆川仪 ==================== -->
   <div class="brand-panel" id="brand-chuanyi">
     <div class="series-tabs">
-      <button class="tab-btn" onclick="showSeries('chuanyi','m8000',this)">M8000系列<span class="sub">智能型·开关量</span></button>
-      <button class="tab-btn" onclick="showSeries('chuanyi','m03',this)">M03/04系列<span class="sub">防爆型</span></button>
-          <button class="tab-btn active" onclick="showSeries('chuanyi','m8300',this)">M8300/M8400<span class="sub">智能变频型</span></button>
-      <button class="tab-btn" onclick="showSeries('chuanyi','m04',this)">M04防爆型<span class="sub">防爆型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('chuanyi','m8000',this)">M8000系列<span class="sub">智能型·开关量</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('chuanyi','m03',this)">M03/04系列<span class="sub">防爆型</span></button>
+          <button type="button" class="tab-btn active" onclick="showSeries('chuanyi','m8300',this)">M8300/M8400<span class="sub">智能变频型</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('chuanyi','m04',this)">M04防爆型<span class="sub">防爆型</span></button>
     </div>
 
     <!-- M8000系列智能型 -->
     <div class="series-panel active" id="chuanyi-m8000">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('chuanyi-m8000','debug',this)">调试</button><button class="ver-btn" onclick="showVer('chuanyi-m8000','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('chuanyi-m8000','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('chuanyi-m8000','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m8000','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m8000','detail',this)">端子表</button></div>
       <div class="ver-panel" id="chuanyi-m8000-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>川仪M8000系列</h3><div class="term-desc">重庆川仪M8300/M8400系列智能电动执行机构，开关量控制，<strong>按键+显示屏</strong>调试。内部自带24V电源，开/关指令为无源干接点。<span class="warn-text">⚠️ 不同型号端子号可能不同，以执行器接线腔内实际接线图为准！</span></div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接L1/L2/L3，单相220V接L/N。PE可靠接地</div></div></div>
@@ -4523,7 +4509,7 @@
 
     <!-- M03/04防爆型 -->
     <div class="series-panel" id="chuanyi-m03">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('chuanyi-m03','debug',this)">调试</button><button class="ver-btn" onclick="showVer('chuanyi-m03','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('chuanyi-m03','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('chuanyi-m03','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m03','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m03','detail',this)">端子表</button></div>
       <div class="ver-panel" id="chuanyi-m03-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>川仪M03/04防爆型</h3><div class="term-desc">重庆川仪M03/04-d系列防爆型智能电动执行机构，端子排分A1-A4（数字输出）和E1-E4（数字输入）+COM公共端。<strong>开指令E2=6(+)，关指令E3=7(+)</strong>。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span></div><div class="term-box power"><span class="num">L2</span></div><div class="term-box power"><span class="num">L3</span></div><div class="term-desc">三相380V或单相220V，PE接地。防爆型接线需符合防爆要求，使用防爆电缆格兰头</div></div></div>
@@ -4562,7 +4548,7 @@
     </div>
   
     <div class="series-panel" id="chuanyi-m8300">
-    <div class="version-tabs"><button class="ver-btn active" onclick="showVer('chuanyi-m8300','debug',this)">调试</button><button class="ver-btn" onclick="showVer('chuanyi-m8300','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('chuanyi-m8300','detail',this)">端子表</button></div>
+    <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('chuanyi-m8300','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m8300','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m8300','detail',this)">端子表</button></div>
     <div class="ver-panel" id="chuanyi-m8300-simple"><div class="simple-section">
       <div class="simple-block block-note"><h3><span class="icon">说</span>川仪M8300/M8400智能型</h3><div class="term-desc">重庆川仪M8300/M8400系列智能电动执行机构，<strong>M83=开关型，M84=调节型(4-20mA输入)</strong>。霍尔传感器绝对位置检测，7组主菜单(P1-P7)，显示分辨率0.1%。内部自带24V输出，开关量无源接线利用内部24V(21/23+，22/24-)。<span class="warn-text">⚠️ 数字输入高电平12-35V，低电平-3V~+5V或开路！</span></div></div>
       <div class="simple-block block-power"><h3><span class="icon">电</span>动力电源</h3><div class="term-row"><div class="term-box power"><span class="num">L1</span><span class="label">1</span></div><div class="term-box power"><span class="num">L2</span><span class="label">2</span></div><div class="term-box power"><span class="num">L3</span><span class="label">3</span></div><div class="term-desc">三相380V接L1/L2/L3（不分相序）；单相220V时1=N/2=L/3不接。PE可靠接地。主电源保险：M8410-M8430为3×16A，M8440/8450为3×25A</div></div></div>
@@ -4609,7 +4595,7 @@
 
   <!-- M04防爆型 -->
     <div class="series-panel" id="chuanyi-m04">
-    <div class="version-tabs"><button class="ver-btn active" onclick="showVer('chuanyi-m04','debug',this)">调试</button><button class="ver-btn" onclick="showVer('chuanyi-m04','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('chuanyi-m04','detail',this)">端子表</button></div>
+    <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('chuanyi-m04','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m04','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('chuanyi-m04','detail',this)">端子表</button></div>
     <div class="ver-panel" id="chuanyi-m04-simple"><div class="simple-section">
       <div class="warn-text" style="margin-bottom:8px">⚠️ 本系列仅单来源核实，<strong>端子定义以铭牌和随机说明书为准</strong>。</div>
       <div class="simple-block block-note"><h3><span class="icon">说</span>川仪M04防爆型</h3><div class="term-desc">重庆川仪M04-d系列<strong>隔爆型</strong>智能电动执行机构，支持调节型(4-20mA)和开关型控制。面板三个按键OPEN/MODE/CLOSE，中英文显示。<span class="warn-text">⚠️ 端子5与端子10连通为调节型控制，断开为开关型控制！防爆型严禁带电开盖，断电后等待5分钟！</span></div></div>
@@ -4659,23 +4645,23 @@
   <!-- ==================== 气动调门（智能阀门定位器） ==================== -->
   <div class="brand-panel" id="brand-pneumatic">
     <div class="series-tabs">
-      <button class="tab-btn active" onclick="showSeries('pneumatic','ps2',this)">西门子PS2<span class="sub">SIPART PS2</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','tzidc',this)">ABB TZIDC<span class="sub">智能定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','dvc6200',this)">Fisher DVC6200<span class="sub">FIELDVUE</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','avp300',this)">山武AVP300<span class="sub">Azbil</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','yt3300',this)">永泰YT-3300<span class="sub">YTC</span></button>
-          <button class="tab-btn" onclick="showSeries('pneumatic','6dr5',this)">西门子6DR5/6DR4<span class="sub">西门子智能定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','tzidc200',this)">ABB TZIDC-200<span class="sub">ABB新一代定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','dvc2000',this)">Fisher DVC2000/6000<span class="sub">Fisher定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','avp100',this)">山武AVP100/200<span class="sub">山武定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','yt3400',this)">YTC YT-3400/3450<span class="sub">永泰智能定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','samson3730',this)">萨姆森3730/3725<span class="sub">萨姆森定位器</span></button>
-      <button class="tab-btn" onclick="showSeries('pneumatic','logix52',this)">福斯Logix520MD<span class="sub">福斯定位器</span></button>
+      <button type="button" class="tab-btn active" onclick="showSeries('pneumatic','ps2',this)">西门子PS2<span class="sub">SIPART PS2</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','tzidc',this)">ABB TZIDC<span class="sub">智能定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','dvc6200',this)">Fisher DVC6200<span class="sub">FIELDVUE</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','avp300',this)">山武AVP300<span class="sub">Azbil</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','yt3300',this)">永泰YT-3300<span class="sub">YTC</span></button>
+          <button type="button" class="tab-btn" onclick="showSeries('pneumatic','6dr5',this)">西门子6DR5/6DR4<span class="sub">西门子智能定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','tzidc200',this)">ABB TZIDC-200<span class="sub">ABB新一代定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','dvc2000',this)">Fisher DVC2000/6000<span class="sub">Fisher定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','avp100',this)">山武AVP100/200<span class="sub">山武定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','yt3400',this)">YTC YT-3400/3450<span class="sub">永泰智能定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','samson3730',this)">萨姆森3730/3725<span class="sub">萨姆森定位器</span></button>
+      <button type="button" class="tab-btn" onclick="showSeries('pneumatic','logix52',this)">福斯Logix520MD<span class="sub">福斯定位器</span></button>
     </div>
 
     <!-- 西门子 SIPART PS2 -->
     <div class="series-panel active" id="pneumatic-ps2">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-ps2','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-ps2','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-ps2','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-ps2','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-ps2','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-ps2','detail',this)">端子表</button></div>
       <div class="ver-panel" id="pneumatic-ps2-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>西门子SIPART PS2</h3><div class="term-desc">德国西门子智能电气阀门定位器，两线制4-20mA/HART，<strong>按键+显示屏</strong>调试，自动初始化（Auto Init）。适用于直行程和角行程气动执行机构。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">+</span><span class="label">信号+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-</span><span class="label">信号-</span></div></div></div><div class="term-desc">两线制4-20mA供电，HART协议叠加。<strong>注意极性</strong>，+接电源正极，-接负极。回路电阻230-600Ω</div></div>
@@ -4713,7 +4699,7 @@
 
     <!-- ABB TZIDC -->
     <div class="series-panel" id="pneumatic-tzidc">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-tzidc','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-tzidc','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-tzidc','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-tzidc','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-tzidc','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-tzidc','detail',this)">端子表</button></div>
       <div class="ver-panel" id="pneumatic-tzidc-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>ABB TZIDC</h3><div class="term-desc">ABB智能电气阀门定位器，两线制4-20mA/HART，<strong>四按键+显示屏</strong>（MODE/ENTER/↑/↓），全自动参数整定（AUTO_ADJ）。直行程-28~28°，角行程-57~57°。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">+</span><span class="label">回路+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-</span><span class="label">回路-</span></div></div></div><div class="term-desc">两线制4-20mA，HART协议。端子标LOOP+ / LOOP-，<strong>无极性要求</strong>（部分型号），按标识接更稳妥</div></div>
@@ -4753,7 +4739,7 @@
 
     <!-- Fisher DVC6200 -->
     <div class="series-panel" id="pneumatic-dvc6200">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-dvc6200','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-dvc6200','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-dvc6200','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-dvc6200','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-dvc6200','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-dvc6200','detail',this)">端子表</button></div>
       <div class="ver-panel" id="pneumatic-dvc6200-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>Fisher DVC6200</h3><div class="term-desc">艾默生Fisher FIELDVUE DVC6200智能阀门定位器，两线制4-20mA/HART，<strong>无极性</strong>。需HART手操器（475/TREX）或AMS软件调试。出厂默认"非投用状态"，需手动激活。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制·无极性）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">LOOP</span><span class="label">端子+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">LOOP</span><span class="label">端子-</span></div></div></div><div class="term-desc">两线制4-20mA，<strong>无极性要求</strong>，两根线随便接。HART协议叠加在信号上。回路电阻230-600Ω</div></div>
@@ -4794,7 +4780,7 @@
 
     <!-- 山武 Azbil AVP300 -->
     <div class="series-panel" id="pneumatic-avp300">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-avp300','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-avp300','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-avp300','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-avp300','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-avp300','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-avp300','detail',this)">端子表</button></div>
       <div class="ver-panel" id="pneumatic-avp300-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>山武Azbil AVP300</h3><div class="term-desc">日本山武（Azbil/阿自倍尔）AVP300系列智能阀门定位器，两线制4-20mA。<strong>螺丝刀触发自动整定</strong>，无需手操器。一体型AVP300/301/302，分离型AVP200/201/202。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA</span><div class="term-box analog-in"><span class="num">+</span><span class="label">信号+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-</span><span class="label">信号-</span></div></div></div><div class="term-desc">两线制4-20mA供电，注意极性。正常运行范围4-20mA，<strong>自动整定时需输入18±1mA</strong></div></div>
@@ -4831,7 +4817,7 @@
 
     <!-- 永泰 YTC YT-3300 -->
     <div class="series-panel" id="pneumatic-yt3300">
-      <div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-yt3300','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-yt3300','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-yt3300','detail',this)">端子表</button></div>
+      <div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-yt3300','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-yt3300','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-yt3300','detail',this)">端子表</button></div>
       <div class="ver-panel" id="pneumatic-yt3300-simple"><div class="simple-section">
         <div class="simple-block block-note"><h3><span class="icon">说</span>永泰YTC YT-3300</h3><div class="term-desc">韩国永泰（YTC，现被Rotork收购）YT-3300系列智能阀门定位器，两线制4-20mA/HART，<strong>四按键+LCD显示</strong>。自动校准AUTO1/AUTO2两种模式。支持分程控制4-12mA/12-20mA。</div></div>
         <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">+</span><span class="label">回路+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-</span><span class="label">回路-</span></div></div></div><div class="term-desc">两线制4-20mA，HART协议。注意极性。回路电阻230-600Ω</div></div>
@@ -4868,7 +4854,7 @@
     </div>
   
     <div class="series-panel" id="pneumatic-6dr5">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-6dr5','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-6dr5','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-6dr5','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-6dr5','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-6dr5','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-6dr5','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-6dr5-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>西门子6DR5/6DR4</h3><div class="term-desc">德国西门子智能电气阀门定位器，6DR5智能型（带HART）/6DR4经济型，两线制4-20mA，<strong>按键+显示屏</strong>调试，5步自动初始化（Auto Init）。适用于直行程和角行程气动执行机构。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">6</span><span class="label">信号+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">7/8</span><span class="label">信号-</span></div></div></div><div class="term-desc">两线制4-20mA供电，HART协议叠加。端子6为正，7/8为负（<strong>7/8内部短接</strong>）。注意极性，回路电阻230-600Ω</div></div>
@@ -4906,9 +4892,9 @@
 </div>
 
 <!-- 2. ABB TZIDC-200/V18346 -->
-<button class="tab-btn" onclick="showSeries('pneumatic','tzidc200',this)">ABB TZIDC-200<span class="sub">ABB新一代定位器</span></button>
+
     <div class="series-panel" id="pneumatic-tzidc200">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-tzidc200','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-tzidc200','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-tzidc200','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-tzidc200','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-tzidc200','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-tzidc200','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-tzidc200-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>ABB TZIDC-200（V18346）</h3><div class="term-desc">ABB新一代智能电气阀门定位器，型号V18346（TZIDC-200），两线制4-20mA/HART，<strong>四按键+显示屏</strong>（MODE/ENTER/↑/↓），全自动参数整定（AUTO_ADJ），10-200步。直行程-28~28°，角行程-57~57°。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">+11</span><span class="label">输入+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-12</span><span class="label">输入-</span></div></div></div><div class="term-desc">两线制4-20mA，HART协议。端子标+11/-12，<strong>固定极性</strong>（+正/-负），端口严格区分输入/输出。最小电压降10V，典型11V@20mA</div></div>
@@ -4947,9 +4933,9 @@
 </div>
 
 <!-- 3. Fisher DVC2000/DVC6000 -->
-<button class="tab-btn" onclick="showSeries('pneumatic','dvc2000',this)">Fisher DVC2000/6000<span class="sub">Fisher定位器</span></button>
+
     <div class="series-panel" id="pneumatic-dvc2000">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-dvc2000','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-dvc2000','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-dvc2000','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-dvc2000','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-dvc2000','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-dvc2000','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-dvc2000-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>Fisher DVC2000/DVC6000</h3><div class="term-desc">艾默生Fisher FIELDVUE DVC2000紧凑型/DVC6000老款数字阀门控制器，两线制4-20mA/HART，<strong>无极性</strong>设计（反接保护）。需HART手操器（475/TREX）或AMS软件调试，自动校准（Auto Calibration）。DVC2000为DVC6200简化版，DVC6000为老一代。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制·无极性）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">LOOP</span><span class="label">端子+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">LOOP</span><span class="label">端子-</span></div></div></div><div class="term-desc">两线制4-20mA，<strong>无极性要求</strong>，两根线随便接（reverse polarity protected）。HART协议叠加在信号上。DVC6200端至少10V DC，回路电阻230-600Ω</div></div>
@@ -4986,9 +4972,9 @@
 </div>
 
 <!-- 4. 山武AVP100/AVP200 -->
-<button class="tab-btn" onclick="showSeries('pneumatic','avp100',this)">山武AVP100/200<span class="sub">山武定位器</span></button>
+
     <div class="series-panel" id="pneumatic-avp100">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-avp100','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-avp100','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-avp100','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-avp100','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-avp100','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-avp100','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-avp100-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>山武AVP100/AVP200</h3><div class="term-desc">日本山武（阿自倍尔/Azbil）AVP100基本型/AVP200分离型智能阀门定位器，4-20mA两线制。<strong>螺丝刀触发自动整定</strong>（输入18mA+转开关90°），无需手操器。带A/M自动/手动开关，反馈杆连接角度90°±2°可达精度规格。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA</span><div class="term-box analog-in"><span class="num">+</span><span class="label">信号+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-</span><span class="label">信号-</span></div></div></div><div class="term-desc">两线制4-20mA供电，注意极性。正常运行范围4-20mA，<strong>自动整定时需输入18±1mA</strong>。AVP100为基础型无智能通信，AVP200为分离型（放大器与定位器分离安装）</div></div>
@@ -5025,9 +5011,9 @@
 <!-- 系列ID: yt3400 -->
 
 <!-- 5. YTC YT-3400/YT-3450 -->
-<button class="tab-btn" onclick="showSeries('pneumatic','yt3400',this)">YTC YT-3400/3450<span class="sub">永泰智能定位器</span></button>
+
     <div class="series-panel" id="pneumatic-yt3400">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-yt3400','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-yt3400','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-yt3400','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-yt3400','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-yt3400','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-yt3400','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-yt3400-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>YTC YT-3400/YT-3450</h3><div class="term-desc">韩国YTC（永泰/罗托克）YT-3400智能型/YT-3450防爆型智能阀门定位器，两线制4-20mA/HART，内置微处理器，<strong>4按键（ENTER/ESC/UP/DOWN）+LCD显示</strong>，自动设定AUTO1/AUTO2/AUTO HF，PID最佳控制。YT-3400为新一代产品。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">IN+</span><span class="label">输入+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">IN-</span><span class="label">输入-</span></div></div></div><div class="term-desc">两线制4-20mA输入，HART通信。<strong>严禁将电压源连接到输入端子（IN+/IN-）</strong>，必须连接电流源，否则烧毁PCB。注意极性，DCS/PLC：+接正，-接负</div></div>
@@ -5065,9 +5051,9 @@
 </div>
 
 <!-- 6. 萨姆森3730/3725 -->
-<button class="tab-btn" onclick="showSeries('pneumatic','samson3730',this)">萨姆森3730/3725<span class="sub">萨姆森定位器</span></button>
+
     <div class="series-panel" id="pneumatic-samson3730">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-samson3730','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-samson3730','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-samson3730','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-samson3730','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-samson3730','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-samson3730','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-samson3730-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>萨姆森3730/3725</h3><div class="term-desc">德国萨姆森（SAMSON）3730智能型/3725经济型数字式电气阀门定位器，两线制4-20mA。3730-6带HART通信/3730-5带FF现场总线。<strong>INIT键激活初始化</strong>，TROVIS-VIEW软件组态。3725老款端子1(+)/2(-)，现场90%故障为正负极接反。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">11(+)</span><span class="label">信号+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">12(-)</span><span class="label">信号-</span></div></div></div><div class="term-desc">3730型：4-20mA信号线接端子<strong>11(+)/12(-)</strong>，<strong>输入信号带反向保护，建议按正负极正确接线</strong>，屏蔽电缆单端接地（控制室侧）。3725老款：端子1(+)/2(-)。HART通信需回路串联250-550Ω电阻</div></div>
@@ -5106,9 +5092,9 @@
 </div>
 
 <!-- 7. 福斯Logix520MD -->
-<button class="tab-btn" onclick="showSeries('pneumatic','logix52',this)">福斯Logix520MD<span class="sub">福斯定位器</span></button>
+
     <div class="series-panel" id="pneumatic-logix52">
-<div class="version-tabs"><button class="ver-btn active" onclick="showVer('pneumatic-logix52','debug',this)">调试</button><button class="ver-btn" onclick="showVer('pneumatic-logix52','simple',this)">接线图</button><button class="ver-btn" onclick="showVer('pneumatic-logix52','detail',this)">端子表</button></div>
+<div class="version-tabs"><button type="button" class="ver-btn active" onclick="showVer('pneumatic-logix52','debug',this)">调试</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-logix52','simple',this)">接线图</button><button type="button" class="ver-btn" onclick="showVer('pneumatic-logix52','detail',this)">端子表</button></div>
 <div class="ver-panel" id="pneumatic-logix52-simple"><div class="simple-section">
 <div class="simple-block block-note"><h3><span class="icon">说</span>福斯Logix 520MD</h3><div class="term-desc">美国福斯（Flowserve）Logix 520MD数字阀门定位器，两线制4-20mA/HART，<strong>反极性保护</strong>。多变量增益整定算法（大阶跃超调小，小阶跃响应快），<strong>Quick-Cal按钮</strong>本地启动自动校准，Auto-Tune自动整定。支持按键+蓝牙APP（ValveSight）高级配置。520MD+为增强版。</div></div>
 <div class="simple-block block-power"><h3><span class="icon">电</span>控制信号（两线制·反极性保护）</h3><div class="term-row"><div class="pair-wrap analog"><span class="pair-tag">4-20mA/HART</span><div class="term-box analog-in"><span class="num">+11</span><span class="label">输入+</span></div><span class="plus-sign">+</span><div class="term-box analog-in"><span class="num">-12</span><span class="label">输入-</span></div></div></div><div class="term-desc">两线制4-20mA输入，HART通信。端子+11/-12，<strong>反极性保护</strong>（现场接线时仍建议核对极性）。最低工作电压约10V</div></div>
@@ -5179,17 +5165,17 @@
         <tr data-brand="emg"><td class="brand">EMG</td><td>EB</td><td class="red">1⇆21</td><td>4</td><td>3</td><td>20</td><td class="green">5-9</td><td class="green">5-7</td><td>5-10</td></tr>
         <tr data-brand="emg"><td class="brand">EMG</td><td>ED</td><td>—</td><td>4</td><td>5</td><td>6</td><td class="green">7-8</td><td class="green">7-9</td><td>10-11</td></tr>
         <tr data-brand="emg"><td class="brand">EMG</td><td>DR</td><td class="red">1⇆21</td><td>4</td><td>3</td><td>20</td><td class="green">5-9</td><td class="green">5-7</td><td>5-10</td></tr>
-        <tr data-brand="shyi"><td class="brand">上仪</td><td>A系列</td><td>—</td><td>35</td><td>33</td><td>34</td><td class="green">10-11</td><td class="green">12-13</td><td>6-7</td></tr>
+        <tr data-brand="shyi"><td class="brand">上仪</td><td>A系列</td><td>—</td><td>35</td><td>33</td><td>36</td><td class="green">10-11</td><td class="green">12-13</td><td>6-7</td></tr>
         <tr data-brand="shyi"><td class="brand">上仪</td><td>M系列</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="green">—</td><td class="green">—</td><td>—</td></tr>
         <tr data-brand="shyi"><td class="brand">上仪</td><td>AI/MI</td><td>—</td><td colspan="2">26(+)27(-)</td><td>—</td><td colspan="2" class="green">22(+)23(-)</td><td>—</td></tr>
-        <tr data-brand="shyi"><td class="brand">上仪</td><td>DKJ</td><td>—</td><td>35</td><td>33</td><td>34</td><td class="green">10-11</td><td class="green">12-13</td><td>6-7</td></tr>
-        <tr data-brand="shyi"><td class="brand">上仪</td><td>DKZ</td><td>—</td><td>35</td><td>33</td><td>34</td><td class="green">10-11</td><td class="green">12-13</td><td>6-7</td></tr>
+        <tr data-brand="shyi"><td class="brand">上仪</td><td>DKJ</td><td>8⇆9</td><td>10-12</td><td>10-11</td><td>10</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr data-brand="shyi"><td class="brand">上仪</td><td>DKZ</td><td>8⇆9</td><td>10-12</td><td>10-11</td><td>10</td><td>—</td><td>—</td><td>—</td></tr>
         <tr data-brand="shyi"><td class="brand">上仪</td><td>361L</td><td>—</td><td colspan="2">1(+)2(-)</td><td>—</td><td colspan="2" class="green">3(+)4(-)</td><td>—</td></tr>
         <tr data-brand="shyi"><td class="brand">上仪</td><td>381L</td><td>—</td><td colspan="2">1(+)2(-)</td><td>—</td><td colspan="2" class="green">3(+)4(-)</td><td>—</td></tr>
-        <tr data-brand="shyi"><td class="brand">上仪</td><td>ZAJ</td><td>—</td><td>35</td><td>33</td><td>34</td><td class="green">10-11</td><td class="green">12-13</td><td>6-7</td></tr>
+        <tr data-brand="shyi"><td class="brand">上仪</td><td>ZAJ</td><td>8⇆9</td><td>10-12</td><td>10-11</td><td>10</td><td>—</td><td>—</td><td>—</td></tr>
         <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA3</td><td>—</td><td>开</td><td>关</td><td>公共</td><td class="green">S1-S2</td><td class="green">S3-S4</td><td>D1-D4</td></tr>
         <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA30</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="green">—</td><td class="green">—</td><td>—</td></tr>
-        <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA5</td><td>—</td><td>X3:23</td><td>X3:24</td><td>X3:22</td><td class="green">X2:11-14</td><td class="green">X2:21-24</td><td>X2:31-34</td></tr>
+        <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA5</td><td>X3.2:18⇆19</td><td>X3:23</td><td>X3:24</td><td>X3:22</td><td class="green">X2:11-14</td><td class="green">X2:21-24</td><td>X2:31-34</td></tr>
         <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA7</td><td>—</td><td>3</td><td>2</td><td>5</td><td class="green">K1(NO)</td><td class="green">K2(NO)</td><td>K5(NO)</td></tr>
         <tr data-brand="siemens"><td class="brand">西门子</td><td>2SA8</td><td>—</td><td>开</td><td>关</td><td>公共</td><td class="green">S1</td><td class="green">S2</td><td>S3</td></tr>
         <tr data-brand="siemens"><td class="brand">西门子</td><td>2SJ/2SQ</td><td>—</td><td>开</td><td>关</td><td>公共</td><td class="green">S1-S2</td><td class="green">S3-S4</td><td>D1-D4</td></tr>
@@ -5310,7 +5296,10 @@ window.addEventListener('DOMContentLoaded', function() {
       if (debugBtn) debugBtn.classList.add('active');
     });
   });
-  filterSummaryTable('raga');
+  // 底部汇总表默认显示全部品牌行
+  document.querySelectorAll('.summary-table tbody tr').forEach(function(r){
+    r.style.display = '';
+  });
 });
 
 function showSeries(brand, name, btn) {
@@ -5330,15 +5319,14 @@ function showSeries(brand, name, btn) {
 }
 
 function showVer(prefix, ver, btn) {
-  var panel = document.getElementById(prefix);
+  var panel = btn.closest('.series-panel');
   if (!panel) {
-    // 尝试找最近的父级
-    panel = btn.closest('.series-panel');
+    panel = document.getElementById(prefix);
   }
   if (panel) {
     panel.querySelectorAll('.ver-panel').forEach(p => p.classList.remove('active'));
     panel.querySelectorAll('.ver-btn').forEach(b => b.classList.remove('active'));
-    var target = document.getElementById(prefix + '-' + ver);
+    var target = panel.querySelector('.ver-panel[id="' + prefix + '-' + ver + '"]');
     if (target) target.classList.add('active');
     btn.classList.add('active');
   }
